@@ -8,7 +8,8 @@ cover-img: /assets/img/baking_background.jpg
 ### Don't mind me, trying smth
 
 Trying to import it as it is
-v01
+
+v02
 
 ```python
 import os
