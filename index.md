@@ -9,7 +9,7 @@ cover-img: /assets/img/baking_background.jpg
 
 Trying to import it as it is
 
-v03
+v04
 
 ```python
 import os
@@ -613,7 +613,9 @@ print('With the chosen threshold we drop {:.2f}% of the msoa data'.format(prop*1
 We will use these features to correlate wealth with distribution of nutrients per area.
 We use the equation below:
 
-\$f_{nutrient_i}(a) = \frac{nutrient_i(a)}{\sum_j nutrient_j(a)}\$nutrients = ["fat","carb","fibre","protein","alcohol"]
+$f_{nutrient_i}(a) = \frac{nutrient_i(a)}{\sum_j nutrient_j(a)}$
+
+nutrients = ["fat","carb","fibre","protein","alcohol"]
 all_nutrients = ["saturate","sugar"]
 sum_df = main_df[nutrients].sum(1)
 for n in nutrients+all_nutrients:
