@@ -10,6 +10,7 @@ share-img: /assets/img/path.jpg
 ### Don't mind me, trying smth
 
 What comes next is random bullsh*t
+v00
 
 The **R** **E**pidemics **Con**sortium (RECON) is an international
 not-for-profit, **non-governmental organisation** gathering experts in data
