@@ -5,6 +5,28 @@ subtitle: Technical extension
 cover-img: /assets/img/baking_background.jpg
 ---
 
+
+## Introduction:
+
+Our story starts from the paper "Tesco Grocery 1.0, a large-scale dataset of grocery purchases in London". It presents a record of 420 millions food items purchased by 1.6 million fidelity card owners who shopped at the 411 Tesco stores in Greater London over the course of the entire year of 2015. The data is aggregated at multiple levels of census areas (borough, ward, MSOA, LSOA) to preserve anonymity.
+
+In the paper, the authors describe the derivations of mutiple food characteritics (associated to each area), mainly concerning the ernergy, weight, type and entropy of the bought products. The authors then establish the validity of the dataset by comparing food purchase volumes to population from official census and match nutrient and energy intake to official statistics of food-related illnesses.
+
+The purpose of our extension is to 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Don't mind me, trying smth
 
 Trying to import it as it is
