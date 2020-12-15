@@ -86,9 +86,13 @@ Note that we stored all images inside the folder assets/img/graphs
 $f_{nutrient_i}(a) = \frac{nutrient_i(a)}{\sum_j nutrient_j(a)}$
 
 #### various thingy:
+
 _italic_
+
 **bold**
+
 [link display name](https://real_link_url.ch)
+
 > "quotes"
 * elem1
 	* sub-elem1_1
