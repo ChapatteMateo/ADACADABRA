@@ -30,6 +30,15 @@ To come up with a wealth estimation for each MSOA, we can rely on the data issue
 
 
 
+## I'm just skipping through to put my ideaaaaas:
+
+![png](/assets/img/graphs/choro_map_HD.png)
+
+As you can see above, even so displaying stats on maps in kind of fancy it is not always the best way to visualize the correlations.
+
+Still, you might notice 
+
+
 
 
 ### Section to be removed on the final version -- Markdown help
