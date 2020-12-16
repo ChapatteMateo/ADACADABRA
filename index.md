@@ -21,6 +21,8 @@ In order to answer this general interrogation, we came up with the following mor
  - Is there evidence of social class difference in eating habits?
  - Do wealthier MSOA areas buy food that could be judged healthier?
  
+As a side note and disclaimer, let us underline that the following analysis was done as part of the Aplied Data Aanalysis course (EPFL) and we whished to make this data story on a lighter tone than the core work. If you wish to find all the serious explanations and details on the calculations we advise you to read the [corresponding notebook](https://github.com/ChapatteMateo/ADACADABRA/blob/master/P4-technical_ext_work/extension.ipynb).
+ 
  So let's get into work and start digging!
  
 ## The data we need:
@@ -32,6 +34,7 @@ To come up with a wealth estimation for each MSOA, we can rely on the data issue
 
 ## I'm just skipping through to put my ideaaaaas:
 
+So let's try to visualise on the London map if there are any clear correlations visible (between wealth level and the different nutrients proportions):
 ![png](/assets/img/graphs/choro_map_HD.png)
 
 As you can see above, even so displaying stats on maps in kind of fancy it is not always the best way to visualize the correlations.
