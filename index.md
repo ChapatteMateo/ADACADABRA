@@ -41,7 +41,7 @@ $$represenativeness_{normalized}=\frac{represenativeness-min(represenativeness)}
 
 where the represenativeness of the given MSOA is:
 
-$$represenativeness=\frac{number of customers}{population}$$
+$$represenativeness=\frac{number \: of \: customers}{population}$$
 
 We followed the same procedure as the original paper by discarding all MSOAs whose $represenativeness_{normalized}$ was below $0.1$.
 
