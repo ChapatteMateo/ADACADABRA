@@ -14,7 +14,7 @@ In the paper, the authors describe the derivations of mutiple food characteritic
 
 This dataset contains precious information concerning eating habits as it is one of the only studies with such a big scale, containing both geo-location and nutritional information.
 
-This raised our interest and made us wonder. Have you ever heard sentences like: "Healthy eating is a privilege of the rich" ? Well with this Tesco dataset we had the chance to bring further checkings to this kind of claims and check the more general assumption: "Do wealthier populations buy healthier food?".
+This raised our interest and made us wonder. Have you ever heard sentences like _"Healthy eating is a privilege of the rich"_ ? Well with this Tesco dataset we had the chance to bring further checkings to this kind of claim and check the more general assumption **"Do wealthier populations buy healthier food?"**.
 
 In order to answer this general interrogation, we came up with the following more precise questions:
  - At MSOA level in Greater London, are there major differences in eating habits depending on the wealth level?
