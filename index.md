@@ -23,10 +23,9 @@ In order to answer this general interrogation, we came up with the following mor
  
  So let's get into work and start digging !
  
- ## The data we need:
+## The data we need:
  
- 
-
+To come up with a wealth estimation for each MSOA, we can rely on the data issued by Greater London Authority. Indeed they share a wide range of statistial informations on MSOA's population, including the median income that we will use as a base for our wealth estimate.
 
 
 
