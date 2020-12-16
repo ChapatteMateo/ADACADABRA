@@ -35,6 +35,8 @@ To come up with a wealth estimation for each MSOA, we can rely on the data issue
 ## I'm just skipping through to put my ideaaaaas:
 
 So let's try to visualise on the London map if there are any clear correlations visible (between wealth level and the different nutrients proportions):
+
+[TODO: rework the graphic it displays bigger and lower space between the 2 comparing] -> to export plt figure in high definition -> fig.savefig("choro_map.png", bbox_inches='tight', dpi=600) 
 ![png](/assets/img/graphs/choro_map_HD.png)
 
 As you can see above, even so displaying stats on maps in kind of fancy it is not always the best way to visualize the correlations.
