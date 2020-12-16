@@ -60,7 +60,7 @@ So let's try to visualise on the London map if there are any clear correlations 
 
 As you can see above, even so displaying stats on maps in kind of fancy it is not always the best way to visualize the correlations.
 
-Still, you might notice 
+Still, you might dicern for carbohydrates, in the center, the white areas meaning a very low weigh of carb correlated with high wealth class.
 
 
 
