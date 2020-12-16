@@ -43,9 +43,13 @@ where the represenativeness of the given MSOA is:
 
 $$represenativeness=\frac{number \: of \: customers}{population}$$
 
-We followed the same procedure as the original paper by discarding all MSOAs whose $represenativeness_{normalized}$ was below $0.1$.
+We followed the same procedure as the original paper by discarding all MSOAs whose $represenativeness_{normalized}$ was below $0.1$. This procedure lead to removing a bit less than $10%$ of the MOSAs.
 
-**not done**
+[si on arrive a faire un representation carte qui donne the nom du MSOA on hover, on la mettrait là en disant, voilà les MSOA restant, c'est joli wow]
+
+## Discretisation into wealth class
+
+
 
 ## I'm just skipping through to put my ideaaaaas:
 
