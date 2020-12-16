@@ -43,12 +43,23 @@ where the represenativeness of the given MSOA is:
 
 $$represenativeness=\frac{number \: of \: customers}{population}$$
 
-We followed the same procedure as the original paper by discarding all MSOAs whose $represenativeness_{normalized}$ was below $0.1$. This procedure lead to removing a bit less than $10%$ of the MOSAs.
+We followed the same procedure as the original paper by discarding all MSOAs whose $represenativeness_{normalized}$ was below $0.1$. This procedure lead to removing a bit less than $10\%$ of the MOSAs.
 
 [si on arrive a faire un representation carte qui donne the nom du MSOA on hover, on la mettrait là en disant, voilà les MSOA restant, c'est joli wow]
 
-## Discretisation into wealth class
+### Discretisation into wealth class
 
+We used the median income by area as the main indicator of wealth. The median has the advantage of being robust to strong outliers (which is often the case with income because they are said to follow a Pareto distribution, the 80-20 rule <-ça peut être retiré, comme vous voulez).
+We ran PCA on the income and ploted the inertia depending on the number of cluster to find an appropriate number of cluster.
+[image du plot d'inertie ? même chose là, on peut tirer le plot avec plot.ly pour a voir une visu interactive]
+We choose 5 clusters and labeled the incomes as {very_low','low','medium','high','very_high'}.
+[visu des statistique par cluster ?]
+
+## Visualisation
+In this part, we will get some intuition about the distribution of nutrient weight and purchased product types among MSOAs. First we will use T-SNE technique to spatial distribution of these features and see if there are similarities between features of same wealth class MSOAs. Then for nutrient distribution, we will geovisualize the distribution to see if there is any geographic pattern.
+
+### T-SNE
+We used T-SNE to project each MSOA, caracterized by the energy coming from the different nutrients, into a 2-dimensional plane.
 
 
 ## I'm just skipping through to put my ideaaaaas:
