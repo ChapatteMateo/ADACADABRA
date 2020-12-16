@@ -12,11 +12,20 @@ Our story starts from the paper "Tesco Grocery 1.0, a large-scale dataset of gro
 
 In the paper, the authors describe the derivations of mutiple food characteritics (associated to each area), mainly concerning the ernergy, weight, type and entropy of the bought products. The authors then establish the validity of the dataset by comparing food purchase volumes to population from official census and match nutrient and energy intake to official statistics of food-related illnesses. To find out more about the Tesco paper and its characteristics, please consult their [official page](https://springernature.figshare.com/articles/Metadata_record_for_Tesco_Grocery_1_0_a_large-scale_dataset_of_grocery_purchases_in_London/11799765).
 
-The purpose of our extension is to 
+This dataset contains precious information concerning eating habits as it is one of the only studies with such a big scale, containing both geo-location and nutritional information.
 
+This raised our interest and made us wonder. Have you ever heard sentences like: "[TODO] oué si t riche tu manges mieux" ? Well with this Tesco dataset we had the chance to bring further checkings to this kind of claims and check the more general assumption: "Do wealthier populations buy healthier food?".
 
-
-
+In order to answer this general interrogation, we came up with the following more precise questions:
+ - At MSOA level in Greater London, are there major differences in eating habits depending on the wealth level?
+ - Is there evidence of social class difference in eating habits?
+ - Do wealthier MSOA areas buy food that could be judged healthier?
+ 
+ So let's get into work and start digging !
+ 
+ ## The data we need:
+ 
+ 
 
 
 
