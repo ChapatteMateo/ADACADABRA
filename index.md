@@ -29,8 +29,23 @@ As a side note and disclaimer, let us underline that the following analysis was 
  
 To come up with a wealth estimation for each MSOA, we can rely on the data issued by [Greater London Authority](https://data.london.gov.uk/dataset/msoa-atlas). Indeed they share a wide range of statistial informations on MSOA's population, including the median income that we will use as a base for our wealth estimate.
 
+To get geographical information about the MSOAs to plot them we need the [data idk où c'était](https://google.com/).
 
+At last we obviously also need the [data-C où ?](https://google.com/) about purchased food that was collected among clubcard user at Tesco and used by the original paper "Tesco Grocery 1.0, a large-scale dataset of grocery purchases in London".
 
+## Data processing
+
+Here, to increase the significance of the data we discarded information coming from MSOAs for which the the ratio of people having a clubcard at Tesco among the total population of the area was not representative. For that purpose we used a metric called normalized representativeness. The normalized represenativeness of a given MOSA can be computed as folows:
+
+$$represenativeness_{normalized}=\frac{represenativeness-min(represenativeness)}{max(represenativeness)-min(represenativeness)}$$
+
+where the represenativeness of the given MSOA is:
+
+$$represenativeness=\frac{number of customers}{population}$$
+
+We followed the same procedure as the original paper by discarding all MSOAs whose $represenativeness_{normalized}$ was below $0.1$.
+
+**not done**
 
 ## I'm just skipping through to put my ideaaaaas:
 
