@@ -44,7 +44,7 @@ We followed the same procedure as the original Tesco paper by discarding all MSO
 
 [si on arrive a faire un representation carte qui donne the nom du MSOA on hover, on la mettrait là en disant, voilà les MSOA restant, c'est joli wow]
 
-<object data="assets/img/figure_map.html">
+<object data="assets/img/figure_map.html" width="1000" height="600">
     Your browser doesn’t support the object tag. 
 </object>
 
