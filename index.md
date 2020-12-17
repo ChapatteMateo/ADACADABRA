@@ -124,7 +124,7 @@ Congratulation DATA, you managed to explain 29% of the variance with those featu
 
 The last test data, let launch the same experiment with nutrients plus the nutrients weight entropy:
 
-![png](/assets/img/coeffs_nutrient.png)
+![png](/assets/img/coeefs_nutrient.png)
 
 Very good DATA !! Now you managed to explain 45% of the variance, we will keep this version as it is better. All coefficients except salt, protein and carb are statistically significant. Both `h_nutrients_weight`, `fibre`, `sugar` and `saturate` have positive coefficients whereas `fat` has negative coefficients. We conclude the entropy has the highest influence on wealth class with fibre which are markers of health.
 
