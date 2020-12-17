@@ -114,6 +114,9 @@ Well, well, well, actually the differences in proportions are quite small. But i
 DATA, we will ask you questions about two set of features. First the weigh distribution of purchased product types and then the mean weight of each nutrient within these products. It's time to pass the spearman correlation test, we will now if you lie using the p_value. It it is below 0.05, then we will reject your sayings. Then let's go with product type first:
 
 ![png](/assets/img/corr_product.png)
+<object data="assets/imgcorr_product.html" width="700" height="400">
+    Your browser doesn’t support the object tag.
+</object>
 
 Well, all above correlations are statistically significant. DATA is not lying to us, fine ! We note strong postitive correlations between wealth class and both fruit&vegetables, dairy, fish which are markers of healthy eating habits. We note strong negative correlation between wealth class and sweets, soft drinks which are marker of unhealty eating habits.
 
