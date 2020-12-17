@@ -76,7 +76,7 @@ Let's consider for each MSOAs, the set of nutrient weight as a vector. We will u
 </object>
 
 DATA : "Well just note that colors correpond to wealth class..."
-I told you to shut up !!!!
+DATA... do you remember what we just said ?
 
 Hmmmm, it seems they are no great clusters... but it also seems that DATA is trying to hide something. What we can observe is that there is a clear cluster for the very high class and is not overlapping with the very low class in both visulizations. Sorry DATA, we will need to continue your examination in more details...
 
@@ -91,7 +91,7 @@ Now, we want to know more. Let us increase the temperature so that DATA shows us
 ![png](/assets/img/product_heatmap.png)
 ![png](/assets/img/nutrient_heatmap.png)
 
-Amazing DATA !! Thank you for these valuable informations. So it seems that the comsumption of wine, fish, dairy products, fruit&vegetables and beer are correlated with high social class value, whereas the comsumption of soft drinks, spirits, grains, poultry and sweets are correlated with low social class value. 
+Amazing DATA !! Thank you for these valuable information. So it seems that the comsumption of wine, fish, dairy products, fruit&vegetables and beer are correlated with high social class value, whereas the comsumption of soft drinks, spirits, grains, poultry and sweets are correlated with low social class value. 
 Additionally we observe the entropy does not show wealth correlation. We also observe that fibre, protein, alcohol and the nutrients entropy are correlated with high wealth class whereas salt, fat, carb and sugar are correlated with low class value. Finally for saturate fat, we don't observe clear correlation.
 
 It seems that all features which are positively correlated are markers of healthy eating, whereas the features which are negatively correlated are markers of unhealthy eating. But under interrogation, couldn't DATA always tells us what we want to hear ? Let's make a last visulization before looking for proofs. 
