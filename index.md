@@ -23,31 +23,32 @@ In order to answer our interrogation, we came up with the following questions:
  
 As a side note and disclaimer, let us underline that the following analysis is done as part of the Aplied Data Aanalysis course (EPFL) and that we whish to make this data story on a lighter tone than the core work. If you want to find all the serious explanations and details on the calculations, we advise you to read the [corresponding notebook](https://github.com/ChapatteMateo/ADACADABRA/blob/master/P4-technical_ext_work/extension.ipynb).
  
- So let's get into work and start digging!
+For our investigations, we question DATA. It's our best contact to get some insights about our questions.
  
-## Let's get DATA:
+## Let's present DATA:
 
-Our best contact to get some inisghs about our questions is called DATA. He knows everything about:
+He knows everything about:
 
-	- [Tesco Grocery](https://springernature.figshare.com/articles/Metadata_record_for_Tesco_Grocery_1_0_a_large-scale_dataset_of_grocery_purchases_in_London/11799765). Additionally, he come up with a wealth estimation for each MSOA, we can rely on the data issued by [Greater London Authority](https://data.london.gov.uk/dataset/msoa-atlas). Indeed they share a wide range of statistical information on MSOA's population, including the median income that we will use as a base for our wealth estimate.
+[Tesco Grocery](https://springernature.figshare.com/articles/Metadata_record_for_Tesco_Grocery_1_0_a_large-scale_dataset_of_grocery_purchases_in_London/11799765). Additionally, he come up with a wealth estimation for each MSOA, we can rely on the data issued by [Greater London Authority](https://data.london.gov.uk/dataset/msoa-atlas). Indeed they share a wide range of statistical information on MSOA's population, including the median income that we will use as a base for our wealth estimate.
 
-[If you've skipped through this section you might wonder _"But why are there some grey areas on the London map ?"_]
-DATA also discarded information coming from MSOAs for which the the ratio of people having a clubcard at Tesco among the total population of the area was not representative. For that purpose we used a metric called normalized representativeness. The normalized represenativeness of a given MOSA can be computed as folows:
+DATA discarded information coming from MSOAs for which the the ratio of people having a clubcard at Tesco among the total population of the area was not representative. DATA followed the same procedure as the original Tesco paper by discarding all MSOAs whose $represenativeness_{normalized}$ was below $0,1$. This procedure leads to the removal of a little less than $10\%$ of the MOSAs.
+
+DATA perfectly knows the coordinates of each MSOAs as you can see below:
+
+<object data="assets/img/figure_map.html" width="1000" height="600">
+    Your browser doesn’t support the object tag. 
+</object>
 
 [MOi les formules je les enlèverais mais voir si on peut inclure ça de manière sympas :)]
+For that purpose we used a metric called normalized representativeness. 
+The normalized represenativeness of a given MOSA can be computed as folows:
 $$represenativeness_{normalized}=\frac{represenativeness-min(represenativeness)}{max(represenativeness)-min(represenativeness)}$$
 
 where the represenativeness of the given MSOA is:
 
 $$represenativeness=\frac{number \: of \: customers}{population}$$
 
-DATA followed the same procedure as the original Tesco paper by discarding all MSOAs whose $represenativeness_{normalized}$ was below $0,1$. This procedure leads to the removal of a little less than $10\%$ of the MOSAs.
 
-[si on arrive a faire un representation carte qui donne the nom du MSOA on hover, on la mettrait là en disant, voilà les MSOA restant, c'est joli wow]
-
-<object data="assets/img/figure_map.html" width="1000" height="600">
-    Your browser doesn’t support the object tag. 
-</object>
 
 So DATA will answer our questions for sure but we need to ask the right questions. First We would like to know what are those classes.
 
@@ -62,15 +63,21 @@ Blablabla, we don't care about this, just show us some stats !
 
 ![png](/assets/img/clusters_stat.png)
 
+So very low class areas have a median annual household income below 29'000 £, low class between 28'000 £ and 36'000 £, medium class between 36'000 £ and 45'000 £, high class between 45'000 £ and 57'000 $ and finally very_high have a median income greater than 57'000 £.
+Finally we note as expected that number of areas with high and very high household income are much lower than the rest.
+
 ## DATA, DATA, show me which population class eats healthy !
 
 Ok DATA, from now, I don't want you to talk, just show us the answer !
 
-Let's consider for each MSOAs, the set of nutrient weight as a vector. We will use TSNE visualization to compare eating habits difference between each MSOAs using these vectors. TSNE modelizes distances between vectors, so two MSOAs close to each others have similar vectors, wheras if they are far away to one another the vector are dissimilar. with similar vector are close to each other wheras they are far if vectors are dissimilar.  We will do the same with distribution of purchased product types. Let us see what it reveals:
+Let's consider for each MSOAs, the set of nutrient weight as a vector. We will use TSNE visualization to compare eating habits difference between each MSOAs using these vectors. TSNE modelizes distances between vectors, so two MSOAs close to each others have similar vectors, wheras if they are far away to one another the vector are dissimilar. We will do the same with distribution of purchased product types. Let us see what it reveals:
 
 ![png](/assets/img/tsne.png)
 
-Hmmmm, it seems they are no great clusters... but it also seems that data is trying to hide something. What we can observe is that there is a clear cluster for the very high class and is not overlapping with the very low class in both visulizations. Sorry DATA, we will need to continue your examination in more details...
+DATA : "Well just note that colors correpond to wealth class..."
+I told you to shut up !!!!
+
+Hmmmm, it seems they are no great clusters... but it also seems that DATA is trying to hide something. What we can observe is that there is a clear cluster for the very high class and is not overlapping with the very low class in both visulizations. Sorry DATA, we will need to continue your examination in more details...
 
 Show us for example a map of London with both wealth classes and mean weight of comsumed fibre in each MSOAs. As we know, fibre is good for health so maybe we'll get an insight !
 
