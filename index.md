@@ -10,29 +10,29 @@ cover-img: /assets/img/baking_background.jpg
 
 Our story starts from the paper "Tesco Grocery 1.0, a large-scale dataset of grocery purchases in London". It presents a record of 420 millions food items purchased by 1.6 million fidelity card owners who shopped at the 411 Tesco stores in Greater London over the course of the entire year of 2015. The data is aggregated at multiple levels of census areas (borough, ward, MSOA, LSOA) to preserve anonymity.
 
-In the paper, the authors describe the derivations of mutiple food characteritics (associated to each area), mainly concerning the energy, weight, type and entropy of the bought products. The authors then establish the validity of the dataset by comparing food purchase volumes to population from official census and match nutrient and energy intake to official statistics of food-related illnesses. To find out more about the Tesco paper and its characteristics, please consult their [official page](https://springernature.figshare.com/articles/Metadata_record_for_Tesco_Grocery_1_0_a_large-scale_dataset_of_grocery_purchases_in_London/11799765).
+In the paper, the authors describe the derivations of mutiple food characteritics (associated to each area), mainly concerning the energy, weight, type and entropy of the bought products. The authors then establish the validity of the dataset by comparing food purchase volumes to population from official census and match nutrient and energy intake to official statistics of food-related illnesses. To find out more about the Tesco paper and its characteristics, do not hesitate to consult their [official page](https://springernature.figshare.com/articles/Metadata_record_for_Tesco_Grocery_1_0_a_large-scale_dataset_of_grocery_purchases_in_London/11799765).
 
-This dataset contains precious information concerning eating habits as it is one of the only studies with such a big scale, containing both geo-location and nutritional information.
+Their dataset contains precious information concerning eating habits, indeed it is one of the only studies with such a big scale that contains both geo-location and nutritional information. This raised our interest and made us wonder:
 
-This raised our interest and made us wonder. Have you ever heard sentences like _"Healthy eating is a privilege of the rich"_? Well with the Tesco dataset we have the chance to bring further checkings to this kind of claim and bring some element of answer to the more general assumption **"Do wealthier populations buy healthier food?"**
+Have you ever heard sentences like _"Healthy eating is a privilege of the rich"_? Well, with the Tesco dataset we have the chance to bring further checkings to this kind of claim and bring an element of answer to the more general assumption **"Do wealthier populations buy healthier food?"**
 
-In order to answer this interrogation, we came up with the following questions:
+In order to answer our interrogation, we came up with the following questions:
  - At MSOA level in Greater London, are there major differences in eating habits depending on the wealth level?
  - Is there evidence of social class difference in eating habits?
  - Do wealthier MSOA areas buy food that could be judged healthier?
  
-As a side note and disclaimer, let us underline that the following analysis was done as part of the Aplied Data Aanalysis course (EPFL) and we whished to make this data story on a lighter tone than the core work. If you wish to find all the serious explanations and details on the calculations we advise you to read the [corresponding notebook](https://github.com/ChapatteMateo/ADACADABRA/blob/master/P4-technical_ext_work/extension.ipynb).
+As a side note and disclaimer, let us underline that the following analysis is done as part of the Aplied Data Aanalysis course (EPFL) and that we whish to make this data story on a lighter tone than the core work. If you want to find all the serious explanations and details on the calculations, we advise you to read the [corresponding notebook](https://github.com/ChapatteMateo/ADACADABRA/blob/master/P4-technical_ext_work/extension.ipynb).
  
  So let's get into work and start digging!
  
 ## The data we need:
 
-But before diving into the nice visualisations and conclusions, let's make a quick (boring but necessary) detour on the different datasets we required and explain why we discarded some MSOA in our study.
+But before diving into the nice visualisations, let's make a quick (boring but necessary) detour on the different datasets we required and the reason we discarded some MSOA areas in our study.
 
-Concerning the datasers, of course the [Tesco Grocery dataset](https://springernature.figshare.com/articles/Metadata_record_for_Tesco_Grocery_1_0_a_large-scale_dataset_of_grocery_purchases_in_London/11799765) will the basis of our analysis. Additionally, to come up with a wealth estimation for each MSOA, we can rely on the data issued by [Greater London Authority](https://data.london.gov.uk/dataset/msoa-atlas). Indeed they share a wide range of statistial informations on MSOA's population, including the median income that we will use as a base for our wealth estimate.
+Concerning the datasets, the one from [Tesco Grocery](https://springernature.figshare.com/articles/Metadata_record_for_Tesco_Grocery_1_0_a_large-scale_dataset_of_grocery_purchases_in_London/11799765) will the basis of our analysis. Additionally, to come up with a wealth estimation for each MSOA, we can rely on the data issued by [Greater London Authority](https://data.london.gov.uk/dataset/msoa-atlas). Indeed they share a wide range of statistical information on MSOA's population, including the median income that we will use as a base for our wealth estimate.
 
-"But why are there some grey areas on the London map ?" Well, let's answer this question before you even have time to ask it!
-To increase the significance of the data, we discarded information coming from MSOAs for which the the ratio of people having a clubcard at Tesco among the total population of the area was not representative. For that purpose we used a metric called normalized representativeness. The normalized represenativeness of a given MOSA can be computed as folows:
+If you've skipped through this section you might wonder _"But why are there some grey areas on the London map ?"_
+Well, to increase the significance of the study, we discarded information coming from MSOAs for which the the ratio of people having a clubcard at Tesco among the total population of the area was not representative. For that purpose we used a metric called normalized representativeness. The normalized represenativeness of a given MOSA can be computed as folows:
 
 $$represenativeness_{normalized}=\frac{represenativeness-min(represenativeness)}{max(represenativeness)-min(represenativeness)}$$
 
@@ -40,7 +40,7 @@ where the represenativeness of the given MSOA is:
 
 $$represenativeness=\frac{number \: of \: customers}{population}$$
 
-We followed the same procedure as the original Tesco paper by discarding all MSOAs whose $represenativeness_{normalized}$ was below $0.1$. This procedure leads to the removal of a little less than $10\%$ of the MOSAs.
+We followed the same procedure as the original Tesco paper by discarding all MSOAs whose $represenativeness_{normalized}$ was below $0,1$. This procedure leads to the removal of a little less than $10\%$ of the MOSAs.
 
 [si on arrive a faire un representation carte qui donne the nom du MSOA on hover, on la mettrait là en disant, voilà les MSOA restant, c'est joli wow]
 
