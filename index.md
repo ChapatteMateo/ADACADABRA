@@ -50,6 +50,9 @@ That's enough DATA, don't bore us with the details and show us some stats !
 <object data="assets/img/clusters_stat.html" width="900" height="400">
     Your browser doesn’t support the object tag.
 </object>
+<object data="assets/img/clusters_stat_v2.html" width="800" height="400">
+    Your browser doesn’t support the object tag.
+</object>
 
 
 To recap:
