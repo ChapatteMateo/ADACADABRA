@@ -88,6 +88,10 @@ Show us for example a map of London with both wealth classes and mean weight of 
 <object data="assets/img/choro_map_fibre.html" width="800" height="300">
     Your browser doesn’t support the object tag. 
 </object>
+text to beremoved !!
+<object data="assets/img/fibre.html" width="800" height="300">
+    Your browser doesn’t support the object tag. 
+</object>
 
 Interesting... we discern fiber somehow correlates with the wealth class. Especially, let's remark this lighter diagonal '>' shape (on the right part of the map) that links the very low incomes with low weight of fibers in the population's diet. However it is quite hard to evaluate how big and significant is the correlation.
 
