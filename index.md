@@ -44,6 +44,11 @@ We followed the same procedure as the original Tesco paper by discarding all MSO
 
 [si on arrive a faire un representation carte qui donne the nom du MSOA on hover, on la mettrait là en disant, voilà les MSOA restant, c'est joli wow]
 
+<object data="assets/img/figure_map.html">
+    Your browser doesn’t support the object tag. 
+</object>
+
+
 ### Discretisation into wealth class
 
 We used the median income by area as the main indicator of wealth. The median has the advantage of being robust to strong outliers (which is often the case with income because they are said to follow a Pareto distribution, the 80-20 rule <-ça peut être retiré, comme vous voulez).
