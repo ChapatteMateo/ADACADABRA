@@ -38,7 +38,7 @@ DATA perfectly knows the coordinates of each MSOAs as you can see below:
 </object>
 
 [MOi les formules je les enlèverais mais voir si on peut inclure ça de manière sympas :)]
-For that purpose we used a metric called normalized representativeness. 
+For that purpose we used a metric called normalized representativeness.
 The normalized represenativeness of a given MOSA can be computed as folows:
 
 $$represenativeness_{normalized}=\frac{represenativeness-min(represenativeness)}{max(represenativeness)-min(represenativeness)}$$
@@ -67,7 +67,7 @@ Finally we note as expected that number of areas with high and very high househo
 
 Ok DATA, from now, I don't want you to talk, just show us the answer !
 
-Let's consider for each MSOAs, the set of nutrient weight as a vector. We will use TSNE visualization to compare eating habits difference between each MSOAs using these vectors. TSNE modelizes distances between vectors, so two MSOAs close to each others have similar vectors, wheras if they are far away to one another the vector are dissimilar. We will do the same with distribution of purchased product types. Let us see what it reveals:
+Let's consider for each MSOAs, the set of nutrient weight as a vector. We will use TSNE visualization to compare eating habits difference between each MSOAs using these vectors. TSNE modelizes distances between vectors, so two MSOAs close to each others have similar vectors, whereas if they are far away to one another the vector are dissimilar. We will do the same with distribution of purchased product types. Let us see what it reveals:
 
 ![png](/assets/img/tsne.png)
 
@@ -88,9 +88,9 @@ Now, we want to know more. Let us increase the temperature so that DATA shows us
 ![png](/assets/img/nutrient_heatmap.png)
 
 Amazing DATA !! Thank you for these valuable informations. So it seems that the comsumption of wine, fish, dairy products, fruit&vegetables and beer are correlated with high social class value, whereas the comsumption of soft drinks, spirits, grains, poultry and sweets are correlated with low social class value. 
-Additionally we observe the entropy does not show wealth correlation. We also observe that fibre, protein, alcohol and the nutrients entropy are correlated with high wealth class wheras salt, fat, carb and sugar are correlated with low class value. Finally for saturate fat, we don't observe clear correlation.
+Additionally we observe the entropy does not show wealth correlation. We also observe that fibre, protein, alcohol and the nutrients entropy are correlated with high wealth class whereas salt, fat, carb and sugar are correlated with low class value. Finally for saturate fat, we don't observe clear correlation.
 
-It seems that all features which are positively correlated are markers of healthy eating, wheras the features which are negatively correlated are markers of unhealthy eating. But under interrogation, couldn't DATA always tells us what we want to hear ? Let's make a last visulization before looking for proofs. 
+It seems that all features which are positively correlated are markers of healthy eating, whereas the features which are negatively correlated are markers of unhealthy eating. But under interrogation, couldn't DATA always tells us what we want to hear ? Let's make a last visulization before looking for proofs. 
 DATA ! Show us the distribution of nutrients for each wealth class !
 
 ![png](/assets/img/PieChart.png)
@@ -115,7 +115,7 @@ Ok DATA, we will make same test on nutrients now:
 
 ![png](/assets/img/corr_nutrients.png)
 
-Perfect ! All correlations are statistically significant except for saturate (p_value=0.1), so we reject this correlation. We indeed note strong positive correlation between both fibre, entropy, protein, and alcohol with median income wheras we note negative correlation with fat, carb, sugar and salt. If we consider protein, fibre and entropy as health markers, we indeed have a strong correlation health - wealth. Good DATA, good !!
+Perfect ! All correlations are statistically significant except for saturate (p_value=0.1), so we reject this correlation. We indeed note strong positive correlation between both fibre, entropy, protein, and alcohol with median income whereas we note negative correlation with fat, carb, sugar and salt. If we consider protein, fibre and entropy as health markers, we indeed have a strong correlation health - wealth. Good DATA, good !!
 
 ### Logistic test
 Finally, we have a last question to ask. What features will you use to predict the wealth class ? Note that by answering this question we will know whether or not the wealth impacts eating habits, so be clear and concise. [Link to explanation why ?]
