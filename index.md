@@ -70,8 +70,6 @@ Ok DATA, from now, I don't want you to talk, just show us the answer !
 Let's consider for each MSOAs, the set of nutrient weight as a vector. We will use TSNE visualization to compare eating habits difference between each MSOAs using these vectors. TSNE modelizes distances between vectors, so two MSOAs close to each others have similar vectors, whereas if they are far away to one another the vector are dissimilar. We will do the same with distribution of purchased product types. Let us see what it reveals:
 
 ![png](/assets/img/tsne.png)
-<p style="font-size:10px;">
-#je teste le layout jusqu'à ce que ce soit propre
 <object data="assets/img/tsne_nutrient.html" width="700" height="400">
     Your browser doesn’t support the object tag.
 </object>
@@ -81,7 +79,6 @@ Let's consider for each MSOAs, the set of nutrient weight as a vector. We will u
 <object data="assets/img/tsne_product.html" width="700" height="400">
     Your browser doesn’t support the object tag.
 </object>
-</p>
 
 DATA : "Well just note that colors correpond to wealth class..."
 DATA... do you remember what we just said ?
