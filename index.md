@@ -40,6 +40,7 @@ DATA perfectly knows the coordinates of each MSOAs as you can see below:
 [MOi les formules je les enlèverais mais voir si on peut inclure ça de manière sympas :)]
 For that purpose we used a metric called normalized representativeness. 
 The normalized represenativeness of a given MOSA can be computed as folows:
+
 $$represenativeness_{normalized}=\frac{represenativeness-min(represenativeness)}{max(represenativeness)-min(represenativeness)}$$
 
 where the represenativeness of the given MSOA is:
