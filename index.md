@@ -61,14 +61,12 @@ We used T-SNE to project each MSOA, caracterized by the energy coming from the d
 
 ## I'm just skipping through to put my ideaaaaas:
 
-So let's try to visualise on the London map if there are any clear correlations visible (between wealth level and the different nutrients proportions):
+So let's try to visualise on the London map if there are any clear correlations visible (here we display the two maps corresponding to the fraction of fibers and the wealth level of each MSOA):
 
-[TODO: rework the graphic it displays bigger and lower space between the 2 comparing] -> to export plt figure in high definition -> fig.savefig("choro_map.png", bbox_inches='tight', dpi=600) 
-![png](/assets/img/graphs/choro_map_HD.png)
+![png](/assets/img/graphs/choro_map_fibre.png)
+As you can see above, even so displaying stats on maps in kind of cool & fancy, it is not always the best way to visualize correlations.
 
-As you can see above, even so displaying stats on maps in kind of fancy it is not always the best way to visualize the correlations.
-
-Still, in the exemple above, you might dicern that fibers correlates with the wealth class. Indeed, you might see especially this lighter > shape (on the right part of the map) that links the very low incomes with low fraction of fibers in the population's diet.
+Still, you might dicern that fibers correlates with the wealth class. Indeed, you might see especially this lighter diagonal '>' shape (on the right part of the map) that links the very low incomes with low fraction of fibers in the population's diet.
 
 
 ### Section to be removed on the final version -- Markdown help
@@ -126,6 +124,8 @@ print("Random stuff")
 Note that we stored all images inside the folder assets/img/graphs
 
 ![png](/assets/img/graphs/output_14_1.png)
+
+to export plt figure in high definition -> fig.savefig("choro_map.png", bbox_inches='tight', dpi=600) 
 
 
 #### you can write $\LaTeX$ like this:
