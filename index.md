@@ -85,7 +85,7 @@ Show us for example a map of London with both wealth classes and mean weight of 
 
 ![png](/assets/img/graphs/choro_map_fibre.png)
 
-<object data="assets/img/choro_map_fibre.html" width="800" height="400">
+<object data="assets/img/choro_map_fibre.html" width="800" height="300">
     Your browser doesn’t support the object tag. 
 </object>
 
