@@ -138,7 +138,7 @@ The last test data, let launch the same experiment with nutrients plus the nutri
 
 ![png](/assets/img/coeefs_nutrient.png)
 
-Very good DATA !! Now you managed to explain 45% of the variance, we will keep this version as it is better. All coefficients except salt, protein and carb are statistically significant. Both `h_nutrients_weight`, `fibre`, `sugar` and `saturate` have positive coefficients whereas `fat` has negative coefficients. With this, we can conclude the entropy has the highest influence on wealth class with fibre which are markers of health.
+Very good DATA !! Now you managed to explain 45% of the variance, we will keep this version as it is better. All coefficients except salt, protein and carb are statistically significant. Both `h_nutrients_weight`, `fibre`, `sugar` and `saturate` have positive coefficients whereas `fat` has negative coefficients. With this, we can conclude entropy and fiber, which are markers of healthy food habits, have the highest influence on the the wealth class.
 
 Thank you for your cooperation DATA, we'll likely see each other again in the next days.
 
