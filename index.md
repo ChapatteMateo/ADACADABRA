@@ -21,33 +21,23 @@ In order to answer our interrogation, we came up with the following questions:
  - Is there evidence of social class difference in eating habits?
  - Do wealthier MSOA areas buy food that could be judged healthier?
  
-As a side note and disclaimer, let us underline that the following analysis is done as part of the Aplied Data Aanalysis course (EPFL) and that we whish to make this data story on a lighter tone than the core work. If you want to find all the serious explanations and details on the calculations, we advise you to read the [corresponding notebook](https://github.com/ChapatteMateo/ADACADABRA/blob/master/P4-technical_ext_work/extension.ipynb).
+As a **side note and disclaimer**, let us underline that the following analysis is done as part of the Aplied Data Aanalysis course (EPFL) and that we whish to make this data story on a lighter tone than the core work. If you want to find all the serious explanations and details on the calculations, we advise you to read the [corresponding notebook](https://github.com/ChapatteMateo/ADACADABRA/blob/master/P4-technical_ext_work/extension.ipynb).
  
-For our investigations, we question DATA. It's our best contact to get some insights about our questions.
+For our investigations, we will question DATA. It's our best contact to get some insights on our questions.
  
 ## Let's present DATA:
 
-He knows everything about the [Tesco Grocery](https://springernature.figshare.com/articles/Metadata_record_for_Tesco_Grocery_1_0_a_large-scale_dataset_of_grocery_purchases_in_London/11799765). Additionally, he came up with a wealth estimation for each MSOA, after merging with his friend issued by [Greater London Authority](https://data.london.gov.uk/dataset/msoa-atlas). This friend contained a wide range of statistical information on MSOA's population, including the median income that we will use as a base for our wealth estimate.
+He knows everything about the [Tesco Grocery](https://springernature.figshare.com/articles/Metadata_record_for_Tesco_Grocery_1_0_a_large-scale_dataset_of_grocery_purchases_in_London/11799765) dataset. DATA also has a friend that was issued by [Greater London Authority](https://data.london.gov.uk/dataset/msoa-atlas). His friend contains a wide range of statistical information on MSOA's population, including the median income that we want to use as a base for our wealth estimate. But DATA is quite voracious. After meeting his friend, he managed to merge him inside and find out the useful information contained in his friend that we needed. 
 
 DATA discarded information coming from MSOAs for which the the ratio of people having a clubcard at Tesco among the total population of the area was not representative. DATA followed the same procedure as the original Tesco paper by discarding all MSOAs whose $represenativeness_{normalized}$ was below $0,1$. This procedure leads to the removal of a little less than $10\%$ of the MOSAs.
 
-DATA perfectly knows the coordinates of each MSOAs as you can see below:
+A last fact we should know about DATA is that he perfectly knows the coordinates of every MSOA on the map below:
 
 <object data="assets/img/figure_map.html" width="1000" height="600">
     Your browser doesn’t support the object tag. 
 </object>
 
-[MOi les formules je les enlèverais mais voir si on peut inclure ça de manière sympas :)]
-For that purpose we used a metric called normalized representativeness.
-The normalized represenativeness of a given MOSA can be computed as folows:
-
-$$represenativeness_{normalized}=\frac{represenativeness-min(represenativeness)}{max(represenativeness)-min(represenativeness)}$$
-
-where the represenativeness of the given MSOA is:
-
-$$represenativeness=\frac{number \: of \: customers}{population}$$
-
-So now DATA will answer our questions for sure but we need to ask the right ones. First We would like to know what are our wealth classes.
+So now DATA will answer our questions but we need to ask the right ones! First, we would like to know more about the wealth classes.
 
 ### DATA, what are the wealth classes ?
 
@@ -148,6 +138,18 @@ I am the conclusion.
 
 
 ### Section to be removed on the final version -- Markdown help
+
+
+#### Old paragraph on representativeness
+[MOi les formules je les enlèverais mais voir si on peut inclure ça de manière sympas :)]
+For that purpose we used a metric called normalized representativeness.
+The normalized represenativeness of a given MOSA can be computed as folows:
+
+$$represenativeness_{normalized}=\frac{represenativeness-min(represenativeness)}{max(represenativeness)-min(represenativeness)}$$
+
+where the represenativeness of the given MSOA is:
+
+$$represenativeness=\frac{number \: of \: customers}{population}$$
 
 #### you can write python code like this:
 
