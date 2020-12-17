@@ -54,13 +54,9 @@ We choose 5 clusters and labeled the incomes as {very_low','low','medium','high'
 
 ## Data, data, show me which population class eats healthy !
 
-Ok data it's time to talk. Let's consider for each MSOAs, the set of nutrient weight as a vector. We will use TSNE visualization to compare eating habits difference between each MSOAs using these vectors. Wo will do the same with distribution of purchased product types. Let see what it reveals:
+Ok data it's time to talk. Let's consider for each MSOAs, the set of nutrient weight as a vector. We will use TSNE visualization to compare eating habits difference between each MSOAs using these vectors. We will do the same with distribution of purchased product types. Let us see what it reveals:
 
-<p float="left">
-  <img src="/assets/img/tsne_nutrient.png" width="300" />
-  <img src="/assets/img/tsne_product.png" width="300" /> 
-  <img src="/assets/img/tsne_product.png" width="300" />
-</p>
+![png](/assets/img/tsnes.png)
 
 Haha !! It seems they are no great clusters. But it seems data is trying to hide something. What we can observe is that there is a clear cluster for the very high class and is not overlapping with the very low class in both visulizations. Sorry data, but you said enough so we continue the examination.
 
