@@ -29,7 +29,7 @@ For our investigations, we will question DATA. It's our best contact to get some
 
 He knows everything about the [Tesco Grocery](https://springernature.figshare.com/articles/Metadata_record_for_Tesco_Grocery_1_0_a_large-scale_dataset_of_grocery_purchases_in_London/11799765) dataset. DATA also has a friend that was issued by [Greater London Authority](https://data.london.gov.uk/dataset/msoa-atlas). His friend contains a wide range of statistical information on MSOA's population, including the median income that we want to use as a base for our wealth estimate. But DATA is quite voracious. After meeting his friend, he managed to merge him inside and find out the useful information contained in his friend that we needed. 
 
-DATA discarded information coming from MSOAs for which the the ratio of people having a clubcard at Tesco among the total population of the area was not representative. DATA followed the same procedure as the original Tesco paper by discarding all MSOAs whose $represenativeness_{normalized}$ was below $0,1$. This procedure leads to the removal of a little less than $10\%$ of the MOSAs.
+DATA discarded information coming from MSOAs for which the the ratio of people having a clubcard at Tesco among the total population of the area was not representative. DATA followed the same procedure as the original Tesco paper by discarding all MSOAs whose $represenativeness_{normalized}$ was below $0.1$. This procedure leads to the removal of a little less than $10\%$ of the MOSAs.
 
 A last fact we should know about DATA is that he perfectly knows the coordinates of every MSOA on the map below:
 
@@ -39,32 +39,31 @@ A last fact we should know about DATA is that he perfectly knows the coordinates
 
 So now DATA will answer our questions but we need to ask the right ones! First, we would like to know more about the wealth classes.
 
-### DATA, what are the wealth classes ?
+### DATA, what are the wealth classes?
 
-"I used the median income by area as the main indicator of wealth. The median has the advantage of being robust to strong outliers (which is often the case with income because they usually follow a Pareto distribution). Then I ran PCA..."
+DATA: "I used the median income by area as the main indicator of wealth. The median has the advantage of being robust to strong outliers (which is often the case with income because they usually follow a Pareto distribution). Then I ran PCA..."
 
-That's enough DATA, don't bore us with the details and show us some stats ! 
+That's enough DATA, don't bore us with the details and show us some stats! 
 
-"Ok ok, here are your stats..."
+DATA: "Ok ok, here are your stats..."
 
 <object data="assets/img/clusters_stat_v2.html" width="800" height="400">
     Your browser doesn’t support the object tag.
 </object>
-
-
 To recap:
- - very low class areas have a median annual household income below 29'000£
- - low class between 28'000£ and 36'000£
- - medium class between 36'000£ and 45'000£
- - high class between 45'000£ and 57'000£
- - very_high have a median income greater than 57'000 £
+* very low class areas have a median annual household income below 29'000£
+* low class between 28'000£ and 36'000£
+* medium class between 36'000£ and 45'000£
+* high class between 45'000£ and 57'000£
+* very_high have a median income greater than 57'000 £
+
 Finally, as we could expect, we see the number of areas with high and very high household income are much lower than the rest.
 
-## DATA, DATA, show me which population class eats healthy !
+## DATA, DATA, show me which population class eats healthy!
 
-Ok DATA, from now, I don't want you to talk, just show us the answer !
+And let's be clear DATA, from now on I don't want you to talk, just show us nice and smooth answers to our questions!
 
-Let's consider for each MSOAs, the set of nutrient weight as a vector. We will use TSNE visualization to compare eating habits difference between each MSOAs using these vectors. TSNE modelizes distances between vectors, so two MSOAs close to each others have similar vectors, whereas if they are far away to one another the vector are dissimilar. We will do the same with distribution of purchased product types. Let us see what it reveals:
+Let's consider for each MSOA, the set of nutrient weight as a vector. We will use T-SNE visualization to compare eating habits difference between each MSOA using these vectors. T-SNE modelizes distances between vectors, so two MSOAs close to each others have similar vectors, whereas if they are far away to one another the vector are dissimilar. We will do the same with distribution of purchased product types. 
 
 <object data="assets/img/tsne_nutrient.html" width="700" height="400">
     Your browser doesn’t support the object tag.
@@ -76,12 +75,15 @@ Let's consider for each MSOAs, the set of nutrient weight as a vector. We will u
     Your browser doesn’t support the object tag.
 </object>
 
-DATA : "Well just note that colors correpond to wealth class..."
+DATA: "Please note that the colors correspond to wealth classes..."
+
 DATA... do you remember what we just said ?
 
-Hmmmm, it seems they are no great clusters... but it also seems that DATA is trying to hide something. What we can observe is that there is a clear cluster for the very high class and is not overlapping with the very low class in both visulizations. Sorry DATA, we will need to continue your examination in more details...
+Sadly, it seems they are no great clusters on these T-SNE visualisation... But it also seems DATA is trying to hide something from us. We can observe that there's still a clear cluster for the very high class and that it does not overlap with the very low class in all visulizations. 
 
-Show us for example a map of London with both wealth classes and mean weight of comsumed fibre in each MSOAs. As we know, fibre is good for health so maybe we'll get an insight !
+Sorry DATA, but we will need to examinate you into more details...
+
+Show us for example a map of London with both wealth classes and mean weight of consumed fibre in each MSOA. It is a fairly accepted fact that fibre is a good indicator of healthy diet so maybe we'll get an insight.
 
 ![png](/assets/img/graphs/choro_map_fibre.png)
 
@@ -89,9 +91,13 @@ Show us for example a map of London with both wealth classes and mean weight of 
     Your browser doesn’t support the object tag.
 </object>
 
-Interesting... we discern fiber somehow correlates with the wealth class. Especially, let's remark this lighter diagonal '>' shape (on the right part of the map) that links the very low incomes with low weight of fibers in the population's diet. However it is quite hard to evaluate how big and significant is the correlation.
+Amazing DATA !! Thank you for these valuable information. So it seems that the comsumption of wine, fish, dairy products, fruit&vegetables and beer are correlated with high social class value, whereas the comsumption of soft drinks, spirits, grains, poultry and sweets are correlated with low social class value.
 
-Now, we want to know more. Let us increase the temperature so that DATA shows us beautiful red shades. For each nutrient weight and product type weight, we would like to visualize the correlation between the mean weight within each class and the wealth classes.
+We also observe that fibre, protein, alcohol and the nutrients entropy are correlated with high wealth class whereas salt, fat, carb and sugar are correlated with low class value. Finally for saturate fat, we don't observe clear correlation.
+
+It seems that all features which are positively correlated are markers of healthy eating, whereas the features which are negatively correlated are markers of unhealthy eating. But under interrogation, couldn't DATA always tells us a little more about what we want to know? 
+
+Let's make a last visulization before looking for proofs. DATA ! Show us the distribution of nutrients for each wealth class!
 
 ![png](/assets/img/product_heatmap.png)
 ![png](/assets/img/nutrient_heatmap.png)
@@ -104,10 +110,9 @@ DATA ! Show us the distribution of nutrients for each wealth class !
 
 ![png](/assets/img/PieChart.png)
 
-Well, well, well, actually the differences in proportions are quite small. But if we observe carefully, we see the percentage of protein increases by 0.3% up to 0.6% for each class increase. The same phenomena can be observed for fat, alcohol and fiber, thus the fraction of carb decreases with higher class level. So it seems there are correlations. The differences in eating habits are no huge, however as data analysts, we are here especially for these details.
+Well, well, well, actually the differences in proportions are quite small. But if we observe carefully, we see the percentage of protein increases by 0.3% up to 0.6% for each class increase. The same phenomena can be observed for fat, alcohol and fiber, thus the fraction of carb decreases with higher class level. So it seems there are indeed correlations. The differences in eating habits are not huge, however as data analysts, we especially aim to spot those non-obvious facts.
 
-
-## DATA, it's time for lie detector test
+## DATA, it's lie detector time
 
 ### Correlation test
 
