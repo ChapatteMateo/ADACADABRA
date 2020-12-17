@@ -113,8 +113,7 @@ Well, well, well, actually the differences in proportions are quite small. But i
 
 DATA, we will ask you questions about two set of features. First the weigh distribution of purchased product types and then the mean weight of each nutrient within these products. It's time to pass the spearman correlation test, we will now if you lie using the p_value. It it is below 0.05, then we will reject your sayings. Then let's go with product type first:
 
-![png](/assets/img/corr_product.png)
-<object data="assets/img/corr_product.html" width="700" height="400">
+<object data="assets/img/corr_product.html" width="700" height="600">
     Your browser doesn’t support the object tag.
 </object>
 
@@ -125,7 +124,6 @@ We can only make hypothesis about this strong correlation, the most likely one t
 
 Ok DATA, we will make same test on nutrients now:
 
-![png](/assets/img/corr_nutrients.png)
 <object data="assets/img/corr_nutrients.html" width="700" height="400">
     Your browser doesn’t support the object tag.
 </object>
