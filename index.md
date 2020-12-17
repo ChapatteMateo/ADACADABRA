@@ -53,11 +53,12 @@ That's enough DATA, don't bore us with the details and show us some stats !
 
 
 To recap:
- - very low class areas have a median annual household income below 29'000£
- - low class between 28'000£ and 36'000£
- - medium class between 36'000£ and 45'000£
- - high class between 45'000£ and 57'000£
- - very_high have a median income greater than 57'000 £
+* very low class areas have a median annual household income below 29'000£
+* low class between 28'000£ and 36'000£
+* medium class between 36'000£ and 45'000£
+* high class between 45'000£ and 57'000£
+* very_high have a median income greater than 57'000 £
+
 Finally, as we could expect, we see the number of areas with high and very high household income are much lower than the rest.
 
 ## DATA, DATA, show me which population class eats healthy !
