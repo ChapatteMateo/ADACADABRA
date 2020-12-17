@@ -56,7 +56,7 @@ We choose 5 clusters and labeled the incomes as {very_low','low','medium','high'
 
 Ok data it's time to talk. Let's consider for each MSOAs, the set of nutrient weight as a vector. We will use TSNE visualization to compare eating habits difference between each MSOAs using these vectors. We will do the same with distribution of purchased product types. Let us see what it reveals:
 
-![png](/assets/img/tsnes.png)
+![png](/assets/img/tsne.png)
 
 Haha !! It seems they are no great clusters. But it seems data is trying to hide something. What we can observe is that there is a clear cluster for the very high class and is not overlapping with the very low class in both visulizations. Sorry data, but you said enough so we continue the examination.
 
