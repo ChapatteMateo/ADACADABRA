@@ -71,7 +71,7 @@ Let's consider for each MSOAs, the set of nutrient weight as a vector. We will u
 
 ![png](/assets/img/tsne.png)
 #je teste le layout jusqu'à ce que ce soit propre
-<object data="assets/img/tsne_nutrient.html" width="800" height="400">
+<object data="assets/img/tsne_nutrient.html" width="700" height="400">
     Your browser doesn’t support the object tag.
 </object>
 
