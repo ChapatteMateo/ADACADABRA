@@ -74,6 +74,12 @@ Let's consider for each MSOAs, the set of nutrient weight as a vector. We will u
 <object data="assets/img/tsne_nutrient.html" width="700" height="400">
     Your browser doesn’t support the object tag.
 </object>
+<object data="assets/img/tsne_purchased.html" width="700" height="400">
+    Your browser doesn’t support the object tag.
+</object>
+<object data="assets/img/tsne_product.html" width="700" height="400">
+    Your browser doesn’t support the object tag.
+</object>
 
 DATA : "Well just note that colors correpond to wealth class..."
 DATA... do you remember what we just said ?
