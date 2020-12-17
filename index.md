@@ -41,11 +41,11 @@ So now DATA will answer our questions but we need to ask the right ones! First, 
 
 ### DATA, what are the wealth classes ?
 
-"I used the median income by area as the main indicator of wealth. The median has the advantage of being robust to strong outliers (which is often the case with income because they usually follow a Pareto distribution). Then I ran PCA..."
+DATA: "I used the median income by area as the main indicator of wealth. The median has the advantage of being robust to strong outliers (which is often the case with income because they usually follow a Pareto distribution). Then I ran PCA..."
 
 That's enough DATA, don't bore us with the details and show us some stats ! 
 
-"Ok ok, here are your stats..."
+DATA: "Ok ok, here are your stats..."
 
 <object data="assets/img/clusters_stat_v2.html" width="800" height="400">
     Your browser doesn’t support the object tag.
@@ -61,11 +61,11 @@ To recap:
 
 Finally, as we could expect, we see the number of areas with high and very high household income are much lower than the rest.
 
-## DATA, DATA, show me which population class eats healthy !
+## DATA, DATA, show me which population class eats healthy!
 
-Ok DATA, from now, I don't want you to talk, just show us the answer !
+And let's be clear DATA, from now on I don't want you to talk, just show us some nice and smooth answers!
 
-Let's consider for each MSOAs, the set of nutrient weight as a vector. We will use TSNE visualization to compare eating habits difference between each MSOAs using these vectors. TSNE modelizes distances between vectors, so two MSOAs close to each others have similar vectors, whereas if they are far away to one another the vector are dissimilar. We will do the same with distribution of purchased product types. Let us see what it reveals:
+Let's consider for each MSOA, the set of nutrient weight as a vector. We will use TSNE visualization to compare eating habits difference between each MSOA using these vectors. TSNE modelizes distances between vectors, so two MSOAs close to each others have similar vectors, whereas if they are far away to one another the vector are dissimilar. We will do the same with distribution of purchased product types. Let us see what it reveals:
 
 <object data="assets/img/tsne_nutrient.html" width="700" height="400">
     Your browser doesn’t support the object tag.
@@ -77,12 +77,15 @@ Let's consider for each MSOAs, the set of nutrient weight as a vector. We will u
     Your browser doesn’t support the object tag.
 </object>
 
-DATA : "Well just note that colors correpond to wealth class..."
+DATA : "Well just note that colors correspond to wealth classes..."
+
 DATA... do you remember what we just said ?
 
-Hmmmm, it seems they are no great clusters... but it also seems that DATA is trying to hide something. What we can observe is that there is a clear cluster for the very high class and is not overlapping with the very low class in both visulizations. Sorry DATA, we will need to continue your examination in more details...
+Sadly, it seems they are no great clusters on these t-sne visualisations... but it also seems that DATA is trying to hide something from us. We can observe that there's still a clear cluster for the very high class and that it does not overlap with the very low class in all visulizations. 
 
-Show us for example a map of London with both wealth classes and mean weight of comsumed fibre in each MSOAs. As we know, fibre is good for health so maybe we'll get an insight !
+Sorry DATA, but we will need to examinate you into more details...
+
+Show us for example a map of London with both wealth classes and mean weight of comsumed fibre in each MSOA. As we know, fibre is good indicator for healthy food so maybe we'll get an insight!
 
 ![png](/assets/img/graphs/choro_map_fibre.png)
 
@@ -90,7 +93,7 @@ Show us for example a map of London with both wealth classes and mean weight of 
     Your browser doesn’t support the object tag. 
 </object>
 
-Interesting... we discern fiber somehow correlates with the wealth class. Especially, let's remark this lighter diagonal '>' shape (on the right part of the map) that links the very low incomes with low weight of fibers in the population's diet. However it is quite hard to evaluate how big and significant is the correlation.
+Interesting... we discern fiber somehow correlates with the wealth class. Especially, remark this lighter diagonal '>' shape (on the right part of the map) that links the very low incomes with low weight of fibers in the population's diet. However it is quite hard to evaluate how big and significant the correlation is.
 
 Now, we want to know more. Let us increase the temperature so that DATA shows us beautiful red shades. For each nutrient weight and product type weight, we would like to visualize the correlation between the mean weight within each class and the wealth classes.
 
