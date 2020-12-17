@@ -91,6 +91,13 @@ Show us for example a map of London with both wealth classes and mean weight of 
     Your browser doesn’t support the object tag.
 </object>
 
+Interesting... we discern fiber somehow correlates with the wealth class. Especially, let's remark this lighter diagonal '>' shape (on the right part of the map) that links the very low incomes with low weight of fibers in the population's diet. However it is quite hard to evaluate how big and significant is the correlation.
+
+Now, we want to know more. Let us increase the temperature so that DATA shows us beautiful red shades. For each nutrient weight and product type weight, we would like to visualize the correlation between the mean weight within each class and the wealth classes.
+
+![png](/assets/img/product_heatmap.png)
+![png](/assets/img/nutrient_heatmap.png)
+
 Amazing DATA !! Thank you for these valuable information. So it seems that the comsumption of wine, fish, dairy products, fruit&vegetables and beer are correlated with high social class value, whereas the comsumption of soft drinks, spirits, grains, poultry and sweets are correlated with low social class value.
 
 We also observe that fibre, protein, alcohol and the nutrients entropy are correlated with high wealth class whereas salt, fat, carb and sugar are correlated with low class value. Finally for saturate fat, we don't observe clear correlation.
@@ -98,15 +105,6 @@ We also observe that fibre, protein, alcohol and the nutrients entropy are corre
 It seems that all features which are positively correlated are markers of healthy eating, whereas the features which are negatively correlated are markers of unhealthy eating. But under interrogation, couldn't DATA always tells us a little more about what we want to know? 
 
 Let's make a last visulization before looking for proofs. DATA ! Show us the distribution of nutrients for each wealth class!
-
-![png](/assets/img/product_heatmap.png)
-![png](/assets/img/nutrient_heatmap.png)
-
-Amazing DATA !! Thank you for these valuable information. So it seems that the comsumption of wine, fish, dairy products, fruit&vegetables and beer are correlated with high social class value, whereas the comsumption of soft drinks, spirits, grains, poultry and sweets are correlated with low social class value. 
-Additionally we observe the entropy does not show wealth correlation. We also observe that fibre, protein, alcohol and the nutrients entropy are correlated with high wealth class whereas salt, fat, carb and sugar are correlated with low class value. Finally for saturate fat, we don't observe clear correlation.
-
-It seems that all features which are positively correlated are markers of healthy eating, whereas the features which are negatively correlated are markers of unhealthy eating. But under interrogation, couldn't DATA always tells us what we want to hear ? Let's make a last visulization before looking for proofs. 
-DATA ! Show us the distribution of nutrients for each wealth class !
 
 ![png](/assets/img/PieChart.png)
 
