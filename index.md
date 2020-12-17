@@ -85,6 +85,10 @@ Show us for example a map of London with both wealth classes and mean weight of 
 
 ![png](/assets/img/graphs/choro_map_fibre.png)
 
+<object data="assets/img/choro_map_fibre.html" width="1000" height="600">
+    Your browser doesn’t support the object tag. 
+</object>
+
 Interesting... we dicern fiber somehow correlates with the wealth class. Especially, let's remark this lighter diagonal '>' shape (on the right part of the map) that links the very low incomes with low weight of fibers in the population's diet. However it is quite hard to evaluate how big and significant is the correlation.
 
 Now, we want to know more. Let us increase the temperature so that DATA shows us beautiful red shades. For each nutrient weight and product type weight, we would like to visualize the correlation between the mean weight within each class and the wealth classes.
