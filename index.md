@@ -54,21 +54,36 @@ We choose 5 clusters and labeled the incomes as {very_low','low','medium','high'
 
 ## Data, data, show me which population class eats healthy !
 
-Let's get some intuition about the distribution of nutrient weight and purchased product types among MSOAs. We consider for each MSOAs, the set of nutrient weight as a vector. We use TSNE visualization to compare eating habits difference between each MSOAs using these vectors. Wo so same with distribution of purchased product types.
+Ok data it's time to talk. Let's consider for each MSOAs, the set of nutrient weight as a vector. We will use TSNE visualization to compare eating habits difference between each MSOAs using these vectors. Wo will do the same with distribution of purchased product types. Let see what it reveals:
+
+<p float="left">
+  <img src="/assets/img/tsne_nutrient.png" width="300" />
+  <img src="/assets/img/tsne_product.png" width="300" /> 
+  <img src="/assets/img/tsne_product.png" width="300" />
+</p>
+
+Haha !! It seems they are no great clusters. But it seems data is trying to hide something. What we can observe is that there is a clear cluster for the very high class and is not overlapping with the very low class in both visulizations. Sorry data, but you said enough so we continue the examination.
+
+For example, show a map of London with both wealth classes and mean weigh of comsumed fibre in each MSOAs. As fibre is good for healh, maybe we'll get an insight.
 
 ![png](/assets/img/graphs/choro_map_fibre.png)
 
-### London map
-So let's try to visualise on the London map if there are any clear correlations visible (here we display the two maps corresponding to the fraction of fibers and the wealth level of each MSOA):
+Interesting, we might dicern fibers somehow correlates with the wealth class. We might especially remark this lighter diagonal '>' shape (on the right part of the map) that links the very low incomes with low fraction of fibers in the population's diet. But it's quite hard to evaluate how big and significant is the correlation.
 
-![png](/assets/img/graphs/choro_map_fibre.png)
+Now, we want to know more. Let us increase the temperature so that data shows us beautiful red shades. For each nutrient weight and product type weight, We want to visualize the correlation between the mean weight within each class and the wealth classes.
 
-As you can see above, even so displaying stats on maps in kind of cool & fancy, it is not always the best way to visualize correlations.
+![png](/assets/img/product_heatmap.png)
+![png](/assets/img/nutrient_heatmap.png)
 
-Still, you might dicern fibers somehow correlates with the wealth class. You might especially remark this lighter diagonal '>' shape (on the right part of the map) that links the very low incomes with low fraction of fibers in the population's diet. But it's quite hard to evaluate how big and significant is the correlation.
+Amazing data !! Thank you for these informations. So it seems that the comsumption of wine, fish, dairy products, fruit&vegetables and beer are correlated with high social class value. Whereas the comsumption of soft drinks, spirits, grains, poultry and sweets are correlated with low social class value. 
+Additionally we observe the entropy does not show wealth correlation. We aslo observe that fibre, protein, alcohol and the nutrients entropy are correlated with high wealth class wheras salt, fat, carb and sugar are correlated with low class value. Finally for saturate fat, we don't observe clear correlation.
 
-That's why we will now try to ... [next]
+It seems that all features which are positive correlated are markers of healthy eating wheras the features which are negative correlated are markers of unhealthy eating. But under interrogation, data cans say anything we want it to say. Let's make a last visulization before looking for proofs. 
+Data ! Show us the ditribution of nutrients for each wealth class !
 
+![png](/assets/img/PieChart.png)
+
+Well, well, well, actually the differences in proportions are quite small. But if we observe carefully, we see the percentage of protein increases by 0.3-0.6% for each class increase. The same phenomena can be observed for fat, alcohol and fiber. Thus the fraction of carb decreases with higher class level. So it seems there are correlations but there are no great differences in eating habits. That's why we are here, we are looking for the details.
 
 ### Section to be removed on the final version -- Markdown help
 
