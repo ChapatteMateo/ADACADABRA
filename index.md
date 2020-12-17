@@ -62,6 +62,7 @@ We used T-SNE to project each MSOA, caracterized by the energy coming from the d
 So let's try to visualise on the London map if there are any clear correlations visible (here we display the two maps corresponding to the fraction of fibers and the wealth level of each MSOA):
 
 ![png](/assets/img/graphs/choro_map_fibre.png)
+
 As you can see above, even so displaying stats on maps in kind of cool & fancy, it is not always the best way to visualize correlations.
 
 Still, you might dicern fibers somehow correlates with the wealth class. You might especially remark this lighter diagonal '>' shape (on the right part of the map) that links the very low incomes with low fraction of fibers in the population's diet. But it's quite hard to evaluate how big and significant is the correlation.
