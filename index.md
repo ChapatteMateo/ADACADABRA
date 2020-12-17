@@ -25,9 +25,9 @@ As a side note and disclaimer, let us underline that the following analysis is d
  
  So let's get into work and start digging!
  
-## The data we need:
+## Let's get some data:
 
-But before diving into the nice visualisations, let's make a quick (boring but necessary) detour on the different datasets we required and the reason we discarded some MSOA areas in our study.
+Let's make a quick (boring but necessary) detour on the different datasets we required and the reason we discarded some MSOA areas in our study.
 
 Concerning the datasets, the one from [Tesco Grocery](https://springernature.figshare.com/articles/Metadata_record_for_Tesco_Grocery_1_0_a_large-scale_dataset_of_grocery_purchases_in_London/11799765) will the basis of our analysis. Additionally, to come up with a wealth estimation for each MSOA, we can rely on the data issued by [Greater London Authority](https://data.london.gov.uk/dataset/msoa-atlas). Indeed they share a wide range of statistical information on MSOA's population, including the median income that we will use as a base for our wealth estimate.
 
@@ -52,11 +52,11 @@ We ran PCA on the income and ploted the inertia depending on the number of clust
 We choose 5 clusters and labeled the incomes as {very_low','low','medium','high','very_high'}.
 [visu des statistique par cluster ?]
 
-## Visualisation
-In this part, we will get some intuition about the distribution of nutrient weight and purchased product types among MSOAs. First we will use T-SNE technique to spatial distribution of these features and see if there are similarities between features of same wealth class MSOAs. Then for nutrient distribution, we will geovisualize the distribution to see if there is any geographic pattern.
+## Data, data, show me which population class eats healthy !
 
-### T-SNE
-We used T-SNE to project each MSOA, caracterized by the energy coming from the different nutrients, into a 2-dimensional plane.
+Let's get some intuition about the distribution of nutrient weight and purchased product types among MSOAs. We consider for each MSOAs, the set of nutrient weight as a vector. We use TSNE visualization to compare eating habits difference between each MSOAs using these vectors. Wo so same with distribution of purchased product types.
+
+![png](/assets/img/graphs/choro_map_fibre.png)
 
 ### London map
 So let's try to visualise on the London map if there are any clear correlations visible (here we display the two maps corresponding to the fraction of fibers and the wealth level of each MSOA):
