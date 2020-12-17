@@ -41,17 +41,21 @@ So now DATA will answer our questions but we need to ask the right ones! First, 
 
 ### DATA, what are the wealth classes ?
 
-"I used the median income by area as the main indicator of wealth. The median has the advantage of being robust to strong outliers (which is often the case with income because they are said to follow a Pareto distribution.
-I ran PCA..."
+"I used the median income by area as the main indicator of wealth. The median has the advantage of being robust to strong outliers (which is often the case with income because they usually follow a Pareto distribution). Then I ran PCA..."
 
-Blablabla, we don't care about this, just show us some stats ! 
+That's enough DATA, don't bore us with the details and show us some stats ! 
 
 "Ok ok, here are your stats..."
 
 ![png](/assets/img/clusters_stat.png)
 
-So very low class areas have a median annual household income below 29'000 £, low class between 28'000 £ and 36'000 £, medium class between 36'000 £ and 45'000 £, high class between 45'000 £ and 57'000 $ and finally very_high have a median income greater than 57'000 £.
-Finally we note as expected that number of areas with high and very high household income are much lower than the rest.
+To recap:
+ - very low class areas have a median annual household income below 29'000£
+ - low class between 28'000£ and 36'000£
+ - medium class between 36'000£ and 45'000£
+ - high class between 45'000£ and 57'000£
+ - very_high have a median income greater than 57'000 £
+Finally, as we could expect, we see the number of areas with high and very high household income are much lower than the rest.
 
 ## DATA, DATA, show me which population class eats healthy !
 
