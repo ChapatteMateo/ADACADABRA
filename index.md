@@ -14,9 +14,9 @@ In the paper, the authors describe the derivations of mutiple food characteritic
 
 This dataset contains precious information concerning eating habits as it is one of the only studies with such a big scale, containing both geo-location and nutritional information.
 
-This raised our interest and made us wonder. Have you ever heard sentences like _"Healthy eating is a privilege of the rich"_? Well with this Tesco dataset we had the chance to bring further checkings to this kind of claim and check the more general assumption **"Do wealthier populations buy healthier food?"**
+This raised our interest and made us wonder. Have you ever heard sentences like _"Healthy eating is a privilege of the rich"_? Well with the Tesco dataset we have the chance to bring further checkings to this kind of claim and bring some element of answer to the more general assumption **"Do wealthier populations buy healthier food?"**
 
-In order to answer this general interrogation, we came up with the following more precise questions:
+In order to answer this interrogation, we came up with the following questions:
  - At MSOA level in Greater London, are there major differences in eating habits depending on the wealth level?
  - Is there evidence of social class difference in eating habits?
  - Do wealthier MSOA areas buy food that could be judged healthier?
@@ -26,16 +26,13 @@ As a side note and disclaimer, let us underline that the following analysis was 
  So let's get into work and start digging!
  
 ## The data we need:
- 
-To come up with a wealth estimation for each MSOA, we can rely on the data issued by [Greater London Authority](https://data.london.gov.uk/dataset/msoa-atlas). Indeed they share a wide range of statistial informations on MSOA's population, including the median income that we will use as a base for our wealth estimate.
 
-To get geographical information about the MSOAs to plot them we need the [data idk où c'était](https://google.com/).
+But before diving into the nice visualisations and conclusions, let's make a quick (boring but necessary) detour on the different datasets we required and explain why we discarded some MSOA in our study.
 
-At last we obviously also need the [data-C où ?](https://google.com/) about purchased food that was collected among clubcard user at Tesco and used by the original paper "Tesco Grocery 1.0, a large-scale dataset of grocery purchases in London".
+Concerning the datasers, of course the [Tesco Grocery dataset](https://springernature.figshare.com/articles/Metadata_record_for_Tesco_Grocery_1_0_a_large-scale_dataset_of_grocery_purchases_in_London/11799765) will the basis of our analysis. Additionally, to come up with a wealth estimation for each MSOA, we can rely on the data issued by [Greater London Authority](https://data.london.gov.uk/dataset/msoa-atlas). Indeed they share a wide range of statistial informations on MSOA's population, including the median income that we will use as a base for our wealth estimate.
 
-## Data processing
-
-Here, to increase the significance of the data we discarded information coming from MSOAs for which the the ratio of people having a clubcard at Tesco among the total population of the area was not representative. For that purpose we used a metric called normalized representativeness. The normalized represenativeness of a given MOSA can be computed as folows:
+"But why are there some grey areas on the London map ?" Well, let's answer this question before you even have time to ask it!
+To increase the significance of the data, we discarded information coming from MSOAs for which the the ratio of people having a clubcard at Tesco among the total population of the area was not representative. For that purpose we used a metric called normalized representativeness. The normalized represenativeness of a given MOSA can be computed as folows:
 
 $$represenativeness_{normalized}=\frac{represenativeness-min(represenativeness)}{max(represenativeness)-min(represenativeness)}$$
 
@@ -43,7 +40,7 @@ where the represenativeness of the given MSOA is:
 
 $$represenativeness=\frac{number \: of \: customers}{population}$$
 
-We followed the same procedure as the original paper by discarding all MSOAs whose $represenativeness_{normalized}$ was below $0.1$. This procedure lead to removing a bit less than $10\%$ of the MOSAs.
+We followed the same procedure as the original Tesco paper by discarding all MSOAs whose $represenativeness_{normalized}$ was below $0.1$. This procedure leads to the removal of a little less than $10\%$ of the MOSAs.
 
 [si on arrive a faire un representation carte qui donne the nom du MSOA on hover, on la mettrait là en disant, voilà les MSOA restant, c'est joli wow]
 
