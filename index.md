@@ -27,7 +27,7 @@ For our investigations, we question DATA. It's our best contact to get some insi
  
 ## Let's present DATA:
 
-He knows everything about[Tesco Grocery](https://springernature.figshare.com/articles/Metadata_record_for_Tesco_Grocery_1_0_a_large-scale_dataset_of_grocery_purchases_in_London/11799765). Additionally, he came up with a wealth estimation for each MSOA, after merging with his friend issued by [Greater London Authority](https://data.london.gov.uk/dataset/msoa-atlas). This friend contained a wide range of statistical information on MSOA's population, including the median income that we will use as a base for our wealth estimate.
+He knows everything about the [Tesco Grocery](https://springernature.figshare.com/articles/Metadata_record_for_Tesco_Grocery_1_0_a_large-scale_dataset_of_grocery_purchases_in_London/11799765). Additionally, he came up with a wealth estimation for each MSOA, after merging with his friend issued by [Greater London Authority](https://data.london.gov.uk/dataset/msoa-atlas). This friend contained a wide range of statistical information on MSOA's population, including the median income that we will use as a base for our wealth estimate.
 
 DATA discarded information coming from MSOAs for which the the ratio of people having a clubcard at Tesco among the total population of the area was not representative. DATA followed the same procedure as the original Tesco paper by discarding all MSOAs whose $represenativeness_{normalized}$ was below $0,1$. This procedure leads to the removal of a little less than $10\%$ of the MOSAs.
 
