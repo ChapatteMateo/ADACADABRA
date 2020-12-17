@@ -41,11 +41,11 @@ So now DATA will answer our questions but we need to ask the right ones! First, 
 
 ### DATA, what are the wealth classes ?
 
-DATA: "I used the median income by area as the main indicator of wealth. The median has the advantage of being robust to strong outliers (which is often the case with income because they usually follow a Pareto distribution). Then I ran PCA..."
+"I used the median income by area as the main indicator of wealth. The median has the advantage of being robust to strong outliers (which is often the case with income because they usually follow a Pareto distribution). Then I ran PCA..."
 
 That's enough DATA, don't bore us with the details and show us some stats ! 
 
-DATA: "Ok ok, here are your stats..."
+"Ok ok, here are your stats..."
 
 <object data="assets/img/clusters_stat_v2.html" width="800" height="400">
     Your browser doesn’t support the object tag.
@@ -53,19 +53,18 @@ DATA: "Ok ok, here are your stats..."
 
 
 To recap:
-* very low class areas have a median annual household income below 29'000£
-* low class between 28'000£ and 36'000£
-* medium class between 36'000£ and 45'000£
-* high class between 45'000£ and 57'000£
-* very_high have a median income greater than 57'000 £
-
+ - very low class areas have a median annual household income below 29'000£
+ - low class between 28'000£ and 36'000£
+ - medium class between 36'000£ and 45'000£
+ - high class between 45'000£ and 57'000£
+ - very_high have a median income greater than 57'000 £
 Finally, as we could expect, we see the number of areas with high and very high household income are much lower than the rest.
 
-## DATA, DATA, show me which population class eats healthy!
+## DATA, DATA, show me which population class eats healthy !
 
-And let's be clear DATA, from now on I don't want you to talk, just show us some nice and smooth answers!
+Ok DATA, from now, I don't want you to talk, just show us the answer !
 
-Let's consider for each MSOA, the set of nutrient weight as a vector. We will use TSNE visualization to compare eating habits difference between each MSOA using these vectors. TSNE modelizes distances between vectors, so two MSOAs close to each others have similar vectors, whereas if they are far away to one another the vector are dissimilar. We will do the same with distribution of purchased product types. Let us see what it reveals:
+Let's consider for each MSOAs, the set of nutrient weight as a vector. We will use TSNE visualization to compare eating habits difference between each MSOAs using these vectors. TSNE modelizes distances between vectors, so two MSOAs close to each others have similar vectors, whereas if they are far away to one another the vector are dissimilar. We will do the same with distribution of purchased product types. Let us see what it reveals:
 
 <object data="assets/img/tsne_nutrient.html" width="700" height="400">
     Your browser doesn’t support the object tag.
@@ -77,15 +76,12 @@ Let's consider for each MSOA, the set of nutrient weight as a vector. We will us
     Your browser doesn’t support the object tag.
 </object>
 
-DATA : "Well just note that colors correspond to wealth classes..."
-
+DATA : "Well just note that colors correpond to wealth class..."
 DATA... do you remember what we just said ?
 
-Sadly, it seems they are no great clusters on these t-sne visualisations... but it also seems that DATA is trying to hide something from us. We can observe that there's still a clear cluster for the very high class and that it does not overlap with the very low class in all visulizations. 
+Hmmmm, it seems they are no great clusters... but it also seems that DATA is trying to hide something. What we can observe is that there is a clear cluster for the very high class and is not overlapping with the very low class in both visulizations. Sorry DATA, we will need to continue your examination in more details...
 
-Sorry DATA, but we will need to examinate you into more details...
-
-Show us for example a map of London with both wealth classes and mean weight of comsumed fibre in each MSOA. As we know, fibre is good indicator for healthy food so maybe we'll get an insight!
+Show us for example a map of London with both wealth classes and mean weight of comsumed fibre in each MSOAs. As we know, fibre is good for health so maybe we'll get an insight !
 
 ![png](/assets/img/graphs/choro_map_fibre.png)
 
@@ -93,7 +89,7 @@ Show us for example a map of London with both wealth classes and mean weight of 
     Your browser doesn’t support the object tag. 
 </object>
 
-Interesting... we discern fiber somehow correlates with the wealth class. Especially, remark this lighter diagonal '>' shape (on the right part of the map) that links the very low incomes with low weight of fibers in the population's diet. However it is quite hard to evaluate how big and significant the correlation is.
+Interesting... we discern fiber somehow correlates with the wealth class. Especially, let's remark this lighter diagonal '>' shape (on the right part of the map) that links the very low incomes with low weight of fibers in the population's diet. However it is quite hard to evaluate how big and significant is the correlation.
 
 Now, we want to know more. Let us increase the temperature so that DATA shows us beautiful red shades. For each nutrient weight and product type weight, we would like to visualize the correlation between the mean weight within each class and the wealth classes.
 
@@ -118,7 +114,7 @@ Well, well, well, actually the differences in proportions are quite small. But i
 DATA, we will ask you questions about two set of features. First the weigh distribution of purchased product types and then the mean weight of each nutrient within these products. It's time to pass the spearman correlation test, we will now if you lie using the p_value. It it is below 0.05, then we will reject your sayings. Then let's go with product type first:
 
 ![png](/assets/img/corr_product.png)
-<object data="assets/imgcorr_product.html" width="700" height="400">
+<object data="assets/img/corr_product.html" width="700" height="400">
     Your browser doesn’t support the object tag.
 </object>
 
@@ -130,6 +126,9 @@ We can only make hypothesis about this strong correlation, the most likely one t
 Ok DATA, we will make same test on nutrients now:
 
 ![png](/assets/img/corr_nutrients.png)
+<object data="assets/img/corr_nutrients.html" width="700" height="400">
+    Your browser doesn’t support the object tag.
+</object>
 
 Perfect ! All correlations are statistically significant, so we reject this correlation. We indeed note strong positive correlation between both fibre, entropy, protein, and alcohol with median income whereas we note negative correlation with saturate, fat, carb, sugar and salt. If we consider protein, fibre and entropy as health markers, we indeed have a strong correlation health - wealth. Good DATA, good !!
 
