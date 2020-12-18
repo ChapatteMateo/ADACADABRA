@@ -97,17 +97,17 @@ We want to know more! Let's increase the temperature so DATA shows us beautiful 
 ![png](/assets/img/product_heatmap.png)
 ![png](/assets/img/nutrient_heatmap.png)
 
-Amazing DATA !! 
+Amazing DATA!! 
 
-DATA: "Hmm, may I say something" ?
+DATA: "Hmm, may I say something"?
 
-Well, if it's interesting, yes, of course !
+Well, if it's interesting, of course!
 
 DATA: "ok, note each `f_{product_type}_weight` field denotes the fraction of total product weight given by products of type {product_type}"
 
-It's good to know, next time, be more precise please before plotting ! Then what are `f_{product_type}` and `{nutrient}` fields then ?
+It's good to know, next time, be more precise please before plotting! Then what are `f_{product_type}` and `{nutrient}` fields?
 
-DATA: "The `f_{product_type}` fields denote the fractions of product type {product_type} purchased. A `{nutrient}` field is the weight of {nutrient} in the average product, in grams. So in the heatmap, you see the average value of each of these fields for each wealth class"
+DATA: "The `f_{product_type}` fields denote the fractions of product type {product_type} purchased. A `{nutrient}` field is the weight of {nutrient} in the average product, in grams. So in the heatmap, you see the average value of each of these fields for each wealth class."
 
 Thank you for these valuable informations. So it seems that the consumption of `wine`, `fish`, `dairy products`, `fruit&vegetables` and `beer` are correlated with high social class value, whereas the consumption of `soft drinks`, `spirits`, `grains`, `poultry` and `sweets` are correlated with low social class value.
 
