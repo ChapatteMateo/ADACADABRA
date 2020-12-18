@@ -156,21 +156,3 @@ Let's recapitulate what we have found so far.  We have seen that, at MSOA level 
 Now, let's look at some of the limitations of our work. First of all, we need to remember our study is only conducted a portion of the population in Greater London. As London is one of most expensive cities in the world, it is clearly not representative (at all) of the general worldwide population or even the population in UK. So even if our analysis may yield similar results on other populations, we cannot take this for granted. 
 
 A second point to keep in mind is that all the data we used comes from Tesco customers (with a fidelity card). Again, this is not representative of the general population as Tesco might attract richer people on average or even bias the products they sell (for exemple Migros does not sell alcohol, similarly Tesco may only have a poor choice of certain food categories).
-
-### Section to be removed on the final version -- Markdown help
-
-
-#### Old paragraph on representativeness
-[MOi les formules je les enlèverais mais voir si on peut inclure ça de manière sympas :)]
-For that purpose we used a metric called normalized representativeness.
-The normalized represenativeness of a given MOSA can be computed as folows:
-
-$$represenativeness_{normalized}=\frac{represenativeness-min(represenativeness)}{max(represenativeness)-min(represenativeness)}$$
-
-where the represenativeness of the given MSOA is:
-
-$$represenativeness=\frac{number \: of \: customers}{population}$$
-
-to export plt figure in high definition -> fig.savefig("choro_map.png", bbox_inches='tight', dpi=600) 
-
-
