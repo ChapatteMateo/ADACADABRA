@@ -55,7 +55,7 @@ To recap:
 * low class between 28'000£ and 36'000£
 * medium class between 36'000£ and 45'000£
 * high class between 45'000£ and 57'000£
-* very_high have a median income greater than 57'000 £
+* very high have a median income greater than 57'000 £
 
 Finally, as we could expect, we see the number of areas with high and very high household income are much lower than the rest.
 
@@ -87,12 +87,12 @@ Show us for example a map of London with both wealth classes and mean weight of 
 
 ![png](/assets/img/graphs/choro_map_fibre.png)
 
-DATA: "As a very last remark, let me underline that the grey areas are the MOSAs that are taken into account due to their low representativeness."
+DATA: "As a very last remark, let me underline that the grey areas are the MOSAs that are taken into account due to their low representativeness." \\
 Mmh ok, it might be good to know. Now let us look at this map.
 
 Interesting... we discern fibre somehow correlates with the wealth class. Especially, remark this lighter diagonal '>' shape (on the right part of the map) that links very low incomes with low weight of fibres in the population's diet. However, it is quite hard to evaluate how big and significant the correlation is.
 
-Now, we want to know more! Let's increase the temperature so DATA shows us beautiful red shades. For each nutrient weight and product type weight, we would like to visualize the correlation between the mean weight within each class and the wealth classes.
+We want to know more! Let's increase the temperature so DATA shows us beautiful red shades. For each nutrient weight and product type weight, we would like to visualize the correlation between the mean weight within each class and the wealth classes.
 
 ![png](/assets/img/product_heatmap.png)
 ![png](/assets/img/nutrient_heatmap.png)
