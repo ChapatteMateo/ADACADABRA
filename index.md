@@ -92,12 +92,24 @@ Mmh ok, it might be good to know. Now let us look at this map.
 
 Interesting... we discern fibre somehow correlates with the wealth class. Especially, remark this lighter diagonal '>' shape (on the right part of the map) that links very low incomes with low weight of fibres in the population's diet. However, it is quite hard to evaluate how big and significant the correlation is.
 
-We want to know more! Let's increase the temperature so DATA shows us beautiful red shades. For each nutrient weight and product type weight, we would like to visualize the correlation between the mean weight within each class and the wealth classes.
+We want to know more! Let's increase the temperature so DATA shows us beautiful red shades. For each nutrient and product type, we would like to visualize the correlation between their mean weight within each class and the wealth classes.
 
 ![png](/assets/img/product_heatmap.png)
 ![png](/assets/img/nutrient_heatmap.png)
 
-Amazing DATA !! Thank you for these valuable information. So it seems that the consumption of `wine`, `fish`, `dairy products`, `fruit&vegetables` and `beer` are correlated with high social class value, whereas the consumption of `soft drinks`, `spirits`, `grains`, `poultry` and `sweets` are correlated with low social class value.
+Amazing DATA !! 
+
+DATA: "Hmm, may I say something" ?
+
+Well, if it's interesting, yes, of course !
+
+DATA: "ok, note each `f_{product_type}_weight` field denotes the fraction of total product weight given by products of type {product_type}"
+
+It's good to know, next time, be more precise please before plotting ! Then what are `f_{product_type}` and `{nutrient}` fields then ?
+
+DATA: "The `f_{product_type}` fields denote the fractions of product type {product_type} purchased. A `{nutrient}` field is the weight of {nutrient} in the average product, in grams. So in the heatmap, you see the average value of each of these fields for each wealth class"
+
+Thank you for these valuable informations. So it seems that the consumption of `wine`, `fish`, `dairy products`, `fruit&vegetables` and `beer` are correlated with high social class value, whereas the consumption of `soft drinks`, `spirits`, `grains`, `poultry` and `sweets` are correlated with low social class value.
 
 We also observe that `fibre`, `protein`, `alcohol` and the `nutrients entropy` are correlated with high wealth class whereas `salt`, `fat`, `carb` and `sugar` are correlated with low class value. Finally, for `saturate fat`, we don't observe clear correlation.
 
