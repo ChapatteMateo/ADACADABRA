@@ -108,31 +108,34 @@ Well, well, well, actually the differences in proportions are quite small. But i
 
 ## DATA, it's lie detector time
 
-### Correlation test
+#### The correlation test
 
-DATA, we will ask you questions about two set of features. First the weigh distribution of purchased product types and then the mean weight of each nutrient within these products. It's time to pass the spearman correlation test, we will now if you lie using the p_value. It it is below 0.05, then we will reject your sayings. Then let's go with product type first:
+DATA, we will ask you questions about two sets of features. First, the weigh distribution of purchased product types. Then the mean weight of each nutrient within these products. It's time to pass the spearman correlation test, we will now if you lie using the p_value. It it is below 0.05, then we will reject your sayings. 
 
+Let's go with product type first:
 <object data="assets/img/corr_product.html" width="700" height="600">
     Your browser doesn’t support the object tag.
 </object>
 
-Well, all above correlations are statistically significant. DATA is not lying to us, fine ! We note strong postitive correlations between wealth class and both fruit&vegetables, dairy, fish which are markers of healthy eating habits. We note strong negative correlation between wealth class and sweets, soft drinks which are marker of unhealty eating habits.
+Well, the above correlations are all statistically significant. DATA is not lying to us, fine! 
 
-We also note a strong positive correlation for wine and negative correlation for water.
-We can only make hypothesis about this strong correlation, the most likely one that we could think of is that the amount of water bought does not vary significanlty but because the wealthier population buys more products then the fraction of them represented by water is reduced. About wine, is it not surprising that, as it is wealthy product, its consumption is correlated with the median income.
+We note strong postitive correlations between wealth class and both fruit&vegetables, dairy and fish which are markers of healthy eating habits. We note strong negative correlation between wealth class and sweets, soft drinks which are marker of unhealty eating habits.
 
-Ok DATA, we will make same test on nutrients now:
+We also note a strong positive correlation for wine and negative correlation for water (remember this is the volume of bought water so it does not include tap water).
+Concerning wine, is it not surprising that, as it is wealthy product, its consumption is correlated with the median income.
+The most likely hypothesis for this second correlation is that the amount of water bought does not vary this significanly but because wealthier population buy more products then the fraction of water is reduced. Also remember this only concerns the volume of bought water (tap water cannot be taken into account) so making conclusions on it is not an easy task. 
 
+Ok DATA, we will now make the same test on nutrients:
 <object data="assets/img/corr_nutrients.html" width="700" height="400">
     Your browser doesn’t support the object tag.
 </object>
 
-Perfect ! All correlations are statistically significant, so we reject this correlation. We indeed note strong positive correlation between both fibre, entropy, protein, and alcohol with median income whereas we note negative correlation with saturate, fat, carb, sugar and salt. If we consider protein, fibre and entropy as health markers, we indeed have a strong correlation health - wealth. Good DATA, good !!
+Again, all correlations are statistically significant. We indeed note strong positive correlation between both `fibre`, `entropy`, `protein`, and `alcohol` with `median income` whereas we note negative correlation with `saturate`, `fat`, `carb`, `sugar` and `salt`. If we consider protein, fibre and entropy as health markers, we indeed have a strong correlation health - wealth. Very good job DATA!
 
-### Logistic test
-Finally, we have a last question to ask. What features will you use to predict the wealth class ? Note that by answering this question we will know whether or not the wealth impacts eating habits, so be clear and concise. [Link to explanation why ?]
+#### The logistic test
+Finally, we have a last question. What features would you use to predict the wealth class? Note that by answering this question we will better know whether or not the wealth impacts eating habits, so be clear and concise.
 
-The test will be simple, we will group medium, low and very low class into non wealthy class and group high and very high into wealthy class. By cumulating fraction values of healthy products (dairy, fish, fruit&veg) into healthy and cumlating fraction values of unhealthy products (fats oils, sweets) into unhealthy, could you predict the wealth class DATA ?
+The test will be simple, we will group medium, low and very low class into non wealthy class and group high and very high into wealthy class. By cumulating fraction values of healthy products (`dairy`, `fish`, `fruit&veg`) into healthy and cumulating fraction values of unhealthy products (`fats oils`, `sweets`) into unhealthy, could you predict the wealth class DATA ?
 
 ![png](/assets/img/coeffs_products.png)
 
