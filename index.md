@@ -91,9 +91,9 @@ Show us for example a map of London with both wealth classes and mean weight of 
     Your browser doesn’t support the object tag.
 </object>
 
-Interesting... we discern fiber somehow correlates with the wealth class. Especially, let's remark this lighter diagonal '>' shape (on the right part of the map) that links the very low incomes with low weight of fibers in the population's diet. However it is quite hard to evaluate how big and significant is the correlation.
+Interesting... we discern fiber somehow correlates with the wealth class. Especially, remark this lighter diagonal '>' shape (on the right part of the map) that links very low incomes with low weight of fibers in the population's diet. However, it is quite hard to evaluate how big and significant the correlation is.
 
-Now, we want to know more. Let us increase the temperature so that DATA shows us beautiful red shades. For each nutrient weight and product type weight, we would like to visualize the correlation between the mean weight within each class and the wealth classes.
+Now, we want to know more! Let's increase the temperature so DATA shows us beautiful red shades. For each nutrient weight and product type weight, we would like to visualize the correlation between the mean weight within each class and the wealth classes.
 
 ![png](/assets/img/product_heatmap.png)
 ![png](/assets/img/nutrient_heatmap.png)
