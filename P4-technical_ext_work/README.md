@@ -61,7 +61,11 @@ The main methods we might use are:
  - Interpret the results to observe if in general "healthy" food habits can be correlated with wealth level
 
 #### 4) Share the results of the study
- - Create a [short video](https://www.youtube.com/) pitching our technical extension [TODO: insert link]
- - Create a [website](https://chapattemateo.github.io/ADACADABRA/) to visualize and understand the results easily
+ - Create a [short video](https://www.youtube.com/) pitching our technical extension
+ - Create a [data story](https://chapattemateo.github.io/ADACADABRA/) to visualize and understand the results easily
  
- 
+#### 5) Additional information:
+Here is an approximate list of each member's participation to the tasks:
+ - Mateo Chapatte: heatmap visu, histogram plots, website setup, importing and reworking the graphs into the story, shoot and edit the video
+ - Guillaume Parchet: data preparation, k-means clustering, spearman correlations, interpretation of the results, writing data story, new README
+ - Guillaume Vray: goepandas & London choropleth map, statistics on wealth classes, piechart visu, logistic regression, writing data story
