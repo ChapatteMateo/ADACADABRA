@@ -119,7 +119,7 @@ Let's go with product type first:
 
 Well, the above correlations are all statistically significant. DATA is not lying to us, fine! 
 
-We note strong postitive correlations between wealth class and both fruit&vegetables, dairy and fish which are markers of healthy eating habits. We note strong negative correlation between wealth class and sweets, soft drinks which are marker of unhealty eating habits.
+We note strong postitive correlations between wealth class and both `fruit&vegetables`, `dairy` and `fish` which are markers of healthy eating habits. We note strong negative correlation between wealth class and sweets, soft drinks which are marker of unhealty eating habits.
 
 We also note a strong positive correlation for wine and negative correlation for water (remember this is the volume of bought water so it does not include tap water).
 Concerning wine, is it not surprising that, as it is wealthy product, its consumption is correlated with the median income.
@@ -139,20 +139,23 @@ The test will be simple, we will group medium, low and very low class into non w
 
 ![png](/assets/img/coeffs_products.png)
 
-Congratulation DATA, you managed to explain 29% of the variance with those features. Plus the coefficient of `unhealthy` and the combined `unhealthy:healthy` are statistically significant having a p_value below 0.05. But we reject `healthy` as not significant (p_value=0.27). The `unhealthy` coefficient is negative meaning buying more unhealthy product lowers probabilty for the area to be wealthy. We note that fractions features are dependent since they sum to one. That's why we combined healthy to unhealthy. This last one has positive coefficient and is statistically significant. Combining this to the fact that `unhealthy` is also significant means that areas where fractions of unhealthy product are going to healthy product have higher probability to be wealthy.
+Congratulation DATA, you managed to explain 29% of the variance with those features. Plus the coefficient of `unhealthy` and the combined `unhealthy:healthy` are statistically significant having a p_value below 0.05. But we reject `healthy` as not significant (p_value=0.27). The `unhealthy` coefficient is negative meaning buying more unhealthy product lowers probabilty for the MSOA area to be wealthy. Still, note that fraction features are dependent since they sum up to one. That's why we combined healthy to unhealthy. This last one has positive coefficient and is statistically significant. Combining this to the fact that `unhealthy` is also significant means that areas where fractions of unhealthy product are going to healthy product have higher probability to be wealthy.
 
-The last test data, let launch the same experiment with nutrients plus the nutrients weight entropy:
+And now the very last test, let DATA launch the same experiment with nutrients and the nutrients weight entropy:
 
 ![png](/assets/img/coeefs_nutrient.png)
 
-Very good DATA !! Now you managed to explain 45% of the variance, we will keep this version as it is better. All coefficients except salt, protein and carb are statistically significant. Both `h_nutrients_weight`, `fibre`, `sugar` and `saturate` have positive coefficients whereas `fat` has negative coefficients. With this, we can conclude entropy and fiber, which are markers of healthy food habits, have the highest influence on the the wealth class.
+Very good DATA! Now you managed to explain 45% of the variance, we will stick to this version as it is better. All coefficients except salt, protein and carb are statistically significant. Both `h_nutrients_weight`, `fibre`, `sugar` and `saturate` have positive coefficients whereas `fat` has negative coefficients. With this, we can conclude entropy and fiber, which are markers of healthy food habits, have the highest influence on the the wealth class.
 
 Thank you for your cooperation DATA, we'll likely see each other again in the next days.
 
 ## Conclusions and limitations
 
-I am the conclusion.
+Let's recapitulate what we have found so far.  We have seen that, at MSOA level in Greater London, there were small in proportion but significant differences in eating habits depending of the wealth level. In particular, we could show that in general wealthier MOSAs buy more fruit, vegetables, dairy and fish and poorer MSOAs correlated with more sweets and soft drinks. Finally, we saw through the last regression (the logitic test) that we could find evidence of social class difference in eating habits (healthier products and nutrients being correlated with wealthier populations).
 
+Now, let's look at some of the limitations of our work. First of all, we need to remember our study is only conducted a portion of the population in Greater London. As London is one of most expensive cities in the world, it is clearly not representative (at all) of the general worldwide population or even the population in UK. So even if our analysis may yield similar results on other populations, we cannot take this for granted. 
+
+A second point to keep in mind is that all the data we used comes from Tesco customers (with a fidelity card). Again, this is not representative of the general population as Tesco might attract richer people on average or even bias the products they sell (for exemple Migros does not sell alcohol, similarly Tesco may only have a poor choice of certain food categories).
 
 ### Section to be removed on the final version -- Markdown help
 
