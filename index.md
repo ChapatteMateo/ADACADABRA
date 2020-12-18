@@ -12,14 +12,14 @@ Our story starts from the paper "Tesco Grocery 1.0, a large-scale dataset of gro
 
 In the paper, the authors describe the derivations of multiple food characteristics (associated to each area), mainly concerning the energy, weight, type and entropy of the bought products. The authors then establish the validity of the dataset by comparing food purchase volumes to population from official census and match nutrient and energy intake to official statistics of food-related illnesses. To find out more about the Tesco paper and its characteristics, do not hesitate to consult their [official page](https://springernature.figshare.com/articles/Metadata_record_for_Tesco_Grocery_1_0_a_large-scale_dataset_of_grocery_purchases_in_London/11799765).
 
-Their dataset contains precious information concerning eating habits, indeed it is one of the only studies with such a big scale that contains both geo-location and nutritional information. This raised our interest and made us wonder:
+Their dataset contains precious information concerning eating habits, indeed it is one of the only studies with such a big scale that contains both geo-location and nutritional information. This raised our interest and led us to wonder:
 
-Have you ever heard sentences like _"Healthy eating is a privilege of the rich"_? Well, with the Tesco dataset we have the chance to bring further checking to this kind of claim and bring an element of answer to the more general assumption **"Do wealthier populations buy healthier food?"**
+Have you ever heard sentences like _"Healthy eating is a privilege of the rich"_? Well, with the Tesco dataset we have the chance to bring further checking to this kind of claim and bring an element of answer to the more general question **"Do wealthier populations buy healthier food?"**
 
 In order to answer our interrogation, we came up with the following questions:
- - At MSOA level in Greater London, are there major differences in eating habits depending on the wealth level?
- - Is there evidence of social class difference in eating habits?
- - Do wealthier MSOA areas buy food that could be judged healthier?
+* At MSOA level in Greater London, are there major differences in eating habits depending on the wealth level?
+* Is there evidence of social class difference in eating habits?
+* Do wealthier MSOA areas buy food that could be judged healthier?
  
 As a **side note and disclaimer**, let us underline that the following analysis is done as part of the Applied Data Analysis course (EPFL) and that we wish to make this data story on a lighter tone than the core work. If you want to find all the serious explanations and details on the calculations, we advise you to read the [corresponding notebook](https://github.com/ChapatteMateo/ADACADABRA/blob/master/P4-technical_ext_work/extension.ipynb).
  
